@@ -5,6 +5,10 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
+        hostname: 'darkgoldenrod-wolverine-791184.hostingersite.com',
+      },
+      {
+        protocol: 'https',
         hostname: 'cms.mistras.lt',
         port: '',
         pathname: '/wp-content/uploads/**',
