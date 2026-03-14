@@ -6,6 +6,7 @@
 import type { Metadata } from 'next'
 import PortfolioGrid from '@/components/portfolio/PortfolioGrid'
 import CtaBanner from '@/components/shared/CtaBanner'
+import { getPortfolioItems } from '@/lib/wp-graphql'
 
 export const metadata: Metadata = {
   title: 'Atlikti Darbai — Grindų Šlifavimo Portfolio | UAB Mistras',
@@ -21,7 +22,9 @@ export const metadata: Metadata = {
   },
 }
 
-export default function PortfolioPage() {
+export default async function PortfolioPage() {
+  const projects = await getPortfolioItems().catch(() => [])
+
   return (
     <>
       {/* Hero */}
@@ -49,7 +52,7 @@ export default function PortfolioPage() {
       {/* Portfolio grid */}
       <section className="py-16 px-[5%] bg-bg">
         <div className="max-w-[1200px] mx-auto">
-          <PortfolioGrid />
+          <PortfolioGrid initialProjects={projects} />
         </div>
       </section>
 

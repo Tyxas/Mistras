@@ -17,8 +17,10 @@ const placeholderProjects = [
   { title: 'Restoranas', type: 'Komercinės grindys · Bona', image: '/images/portfolio/portfolio-restaurant.png' },
 ]
 
-export default function PortfolioPreview() {
+export default function PortfolioPreview({ initialProjects = [] }: { initialProjects?: any[] }) {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.15 })
+
+  const projectsToUse = initialProjects.length > 0 ? initialProjects.slice(0, 3) : placeholderProjects
 
   return (
     <section id="portfolio" className="py-20 px-[5%] bg-walnut-dark" ref={ref}>
@@ -35,7 +37,7 @@ export default function PortfolioPreview() {
 
         {/* Project grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {placeholderProjects.map((project, i) => (
+          {projectsToUse.map((project, i) => (
             <motion.div
               key={project.title}
               initial={{ opacity: 0, y: 30 }}
@@ -43,12 +45,18 @@ export default function PortfolioPreview() {
               transition={{ duration: 0.5, delay: i * 0.1 }}
               className="rounded-brand overflow-hidden relative aspect-square cursor-pointer group bg-walnut/10"
             >
-              <Image
-                src={project.image}
-                alt={project.title}
-                fill
-                className="object-cover transition-transform duration-700 group-hover:scale-110"
-              />
+              {(project.image || project.afterImage) ? (
+                <Image
+                  src={project.image || project.afterImage}
+                  alt={project.title}
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+              ) : (
+                <div className="absolute inset-0 bg-walnut/20 flex items-center justify-center text-white/30">
+                  Nuotraukos nėra
+                </div>
+              )}
 
               {/* Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />

@@ -1,0 +1,90 @@
+[
+    {
+        "key": "group_65f2a1b2c3d4e",
+        "title": "Projekto Informacija (Portfolio)",
+        "fields": [
+            {
+                "key": "field_65f2a1b2c3d4f",
+                "label": "Vietovė",
+                "name": "location",
+                "type": "text",
+                "instructions": "Pvz: Žvėrynas, Vilnius",
+                "required": 0,
+                "wrapper": {
+                    "width": "50"
+                }
+            },
+            {
+                "key": "field_65f2a1b2c3d50",
+                "label": "Plotas",
+                "name": "area",
+                "type": "text",
+                "instructions": "Pvz: 65 m²",
+                "wrapper": {
+                    "width": "50"
+                }
+            },
+            {
+                "key": "field_65f2a1b2c3d51",
+                "label": "Trukmė",
+                "name": "duration",
+                "type": "text",
+                "instructions": "Pvz: 2 dienos",
+                "wrapper": {
+                    "width": "50"
+                }
+            },
+            {
+                "key": "field_65f2a1b2c3d52",
+                "label": "Darbų Tipas",
+                "name": "project_type",
+                "type": "text",
+                "instructions": "Pvz: Ąžuolo parketas · Lakavimas",
+                "wrapper": {
+                    "width": "50"
+                }
+            },
+            {
+                "key": "field_65f2a1b2c3d53",
+                "label": "Nuotrauka PRIEŠ",
+                "name": "before_image",
+                "type": "image",
+                "return_format": "url",
+                "preview_size": "medium",
+                "library": "all",
+                "wrapper": {
+                    "width": "50"
+                }
+            },
+            {
+                "key": "field_65f2a1b2c3d54",
+                "label": "Nuotrauka PO",
+                "name": "after_image",
+                "type": "image",
+                "return_format": "url",
+                "preview_size": "medium",
+                "library": "all",
+                "wrapper": {
+                    "width": "50"
+                }
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    }
+]

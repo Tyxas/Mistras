@@ -18,6 +18,9 @@ export interface PortfolioProject {
   area: string
   duration: string
   description: string
+  beforeImage?: string
+  afterImage?: string
+  location?: string
 }
 
 interface PortfolioCardProps {

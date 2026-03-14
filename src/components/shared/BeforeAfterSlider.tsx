@@ -64,13 +64,13 @@ export default function BeforeAfterSlider({
         className="absolute inset-0 flex items-center justify-center text-6xl"
         style={{
           background: `linear-gradient(135deg, #4a3728 0%, #6b4c3c 100%)`,
-          backgroundImage: beforeSrc.startsWith('/') ? `url(${beforeSrc})` : undefined,
+          backgroundImage: beforeSrc ? `url(${beforeSrc})` : undefined,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
         aria-label={beforeAlt}
       >
-        {!beforeSrc.startsWith('/') && '🪵'}
+        {!beforeSrc && '🪵'}
       </div>
 
       {/* After image (clipped) */}
@@ -78,14 +78,14 @@ export default function BeforeAfterSlider({
         className="absolute inset-0 flex items-center justify-center text-6xl"
         style={{
           background: `linear-gradient(135deg, #8B6914 0%, #D4A843 100%)`,
-          backgroundImage: afterSrc.startsWith('/') ? `url(${afterSrc})` : undefined,
+          backgroundImage: afterSrc ? `url(${afterSrc})` : undefined,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           clipPath: `inset(0 ${100 - position}% 0 0)`,
         }}
         aria-label={afterAlt}
       >
-        {!afterSrc.startsWith('/') && '✨'}
+        {!afterSrc && '✨'}
       </div>
 
       {/* Drag handle line */}

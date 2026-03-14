@@ -4,7 +4,7 @@
  * Includes generateMetadata() and LocalBusiness JSON-LD.
  */
 import type { Metadata } from 'next'
-import { getHomepageData } from '@/lib/wp-graphql'
+import { getHomepageData, getPortfolioItems } from '@/lib/wp-graphql'
 import HeroSection from '@/components/home/HeroSection'
 import TrustBar from '@/components/home/TrustBar'
 import AboutIntro from '@/components/home/AboutIntro'
@@ -41,6 +41,8 @@ export default async function HomePage() {
     return null;
   });
 
+  const portfolioData = await getPortfolioItems().catch(() => []);
+
   return (
     <>
       <LocalBusinessSchema />
@@ -49,7 +51,7 @@ export default async function HomePage() {
       <AboutIntro />
       <Calculator />
       <ServicesGrid />
-      <PortfolioPreview />
+      <PortfolioPreview initialProjects={portfolioData} />
       <WhyUsSection />
       <TestimonialsCarousel />
       <FaqAccordion />

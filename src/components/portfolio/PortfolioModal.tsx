@@ -70,8 +70,8 @@ export default function PortfolioModal({ project, onClose }: PortfolioModalProps
             {/* Before/After slider */}
             <div className="px-8 py-6">
               <BeforeAfterSlider
-                beforeSrc="placeholder-before"
-                afterSrc="placeholder-after"
+                beforeSrc={project.beforeImage || 'placeholder-before'}
+                afterSrc={project.afterImage || project.image || 'placeholder-after'}
                 beforeAlt={`${project.title} prieš šlifavimą`}
                 afterAlt={`${project.title} po šlifavimo`}
               />

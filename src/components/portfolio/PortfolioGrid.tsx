@@ -24,13 +24,15 @@ const PLACEHOLDER_PROJECTS: PortfolioProject[] = [
   { id: '9', title: 'Termomedžio terasa, Baltupiai', type: 'Termomedis · Specialus aliejus', category: 'Terasos', gradient: 'from-[#2C1810] to-[#795548]', area: '40 m²', duration: '1.5 dienos', description: 'Termomedžio terasos atnaujinimas specialia lauko alyva su UV ir drėgmės apsauga.' },
 ]
 
-export default function PortfolioGrid() {
+export default function PortfolioGrid({ initialProjects = PLACEHOLDER_PROJECTS }: { initialProjects?: PortfolioProject[] }) {
   const [filter, setFilter] = useState('Visi')
   const [selectedProject, setSelectedProject] = useState<PortfolioProject | null>(null)
 
+  const projectsToUse = initialProjects.length > 0 ? initialProjects : PLACEHOLDER_PROJECTS
+
   const filteredProjects = filter === 'Visi'
-    ? PLACEHOLDER_PROJECTS
-    : PLACEHOLDER_PROJECTS.filter((p) => p.category === filter)
+    ? projectsToUse
+    : projectsToUse.filter((p) => p.category === filter)
 
   return (
     <>

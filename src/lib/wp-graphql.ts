@@ -47,3 +47,49 @@ export async function getHomepageData() {
 
   return data?.page?.heroSection;
 }
+
+export async function getPortfolioItems() {
+  const data = await fetchAPI(`
+    query PortfolioQuery {
+      posts(first: 100, where: { orderby: { field: DATE, order: DESC } }) {
+        nodes {
+          id
+          title
+          content
+          categories {
+            nodes {
+              name
+            }
+          }
+          portfolioDetails {
+            location
+            area
+            duration
+            projectType
+            beforeImage
+            afterImage
+          }
+          featuredImage {
+            node {
+              sourceUrl
+            }
+          }
+        }
+      }
+    }
+  `);
+
+  return data?.posts?.nodes?.map((post: any) => ({
+    id: post.id,
+    title: post.title,
+    description: post.content?.replace(/<[^>]*>/g, '').substring(0, 160) + '...',
+    category: post.categories?.nodes[0]?.name || 'Projektai',
+    type: post.portfolioDetails?.projectType || 'Grindų šlifavimas',
+    area: post.portfolioDetails?.area || '',
+    duration: post.portfolioDetails?.duration || '',
+    location: post.portfolioDetails?.location || '',
+    image: post.featuredImage?.node?.sourceUrl || post.portfolioDetails?.afterImage || '',
+    beforeImage: post.portfolioDetails?.beforeImage || '',
+    afterImage: post.portfolioDetails?.afterImage || '',
+  }));
+}
