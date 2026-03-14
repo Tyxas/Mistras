@@ -66,8 +66,16 @@ export async function getPortfolioItems() {
             area
             duration
             projectType
-            beforeImage
-            afterImage
+            beforeImage {
+              node {
+                sourceUrl
+              }
+            }
+            afterImage {
+              node {
+                sourceUrl
+              }
+            }
           }
           featuredImage {
             node {
@@ -89,8 +97,8 @@ export async function getPortfolioItems() {
       area?: string;
       duration?: string;
       location?: string;
-      beforeImage?: string;
-      afterImage?: string;
+      beforeImage?: { node: { sourceUrl: string } };
+      afterImage?: { node: { sourceUrl: string } };
     };
     featuredImage?: { node: { sourceUrl: string } };
   }) => ({
@@ -102,8 +110,8 @@ export async function getPortfolioItems() {
     area: post.portfolioDetails?.area || '',
     duration: post.portfolioDetails?.duration || '',
     location: post.portfolioDetails?.location || '',
-    image: post.featuredImage?.node?.sourceUrl || post.portfolioDetails?.afterImage || '',
-    beforeImage: post.portfolioDetails?.beforeImage || '',
-    afterImage: post.portfolioDetails?.afterImage || '',
+    image: post.featuredImage?.node?.sourceUrl || post.portfolioDetails?.afterImage?.node?.sourceUrl || '',
+    beforeImage: post.portfolioDetails?.beforeImage?.node?.sourceUrl || '',
+    afterImage: post.portfolioDetails?.afterImage?.node?.sourceUrl || '',
   }));
 }
