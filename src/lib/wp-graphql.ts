@@ -104,13 +104,13 @@ export async function getPortfolioItems() {
   }) => ({
     id: post.id,
     title: post.title,
-    description: post.content?.replace(/<[^>]*>/g, '').substring(0, 160) + '...',
-    category: post.categories?.nodes[0]?.name || 'Projektai',
+    description: post.content ? post.content.replace(/<[^>]*>/g, '').substring(0, 160) + (post.content.length > 160 ? '...' : '') : '',
+    category: post.categories?.nodes?.[0]?.name || 'Projektai',
     type: post.portfolioDetails?.projectType || 'Grindų šlifavimas',
     area: post.portfolioDetails?.area || '',
     duration: post.portfolioDetails?.duration || '',
     location: post.portfolioDetails?.location || '',
-    image: post.featuredImage?.node?.sourceUrl || post.portfolioDetails?.afterImage?.node?.sourceUrl || '',
+    image: post.featuredImage?.node?.sourceUrl || post.portfolioDetails?.afterImage?.node?.sourceUrl || '/images/portfolio/portfolio-zverynas.png',
     beforeImage: post.portfolioDetails?.beforeImage?.node?.sourceUrl || '',
     afterImage: post.portfolioDetails?.afterImage?.node?.sourceUrl || '',
   }));
