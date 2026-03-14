@@ -1,0 +1,94 @@
+[
+    {
+        "key": "group_hero_section",
+        "title": "Pagrindinė (Hero) sekcija",
+        "fields": [
+            {
+                "key": "field_hero_eyebrow",
+                "label": "Mažas akcentas viršuje",
+                "name": "hero_eyebrow",
+                "type": "text",
+                "instructions": "Mažas tekstas virš pagrindinės antraštės (pvz. Grindų meistrai šalia jūsų)",
+                "default_value": "Grindų meistrai šalia jūsų",
+                "show_in_graphql": 1
+            },
+            {
+                "key": "field_hero_headline",
+                "label": "Pagrindinė antraštė",
+                "name": "hero_headline",
+                "type": "text",
+                "instructions": "Pagrindinis tekstas didelėmis raidėmis (pvz. Tobulų grindų)",
+                "required": 1,
+                "wrapper": { "width": "50" },
+                "default_value": "Tobulų grindų",
+                "show_in_graphql": 1
+            },
+            {
+                "key": "field_hero_headline_accent",
+                "label": "Antraštės spalvotas akcentas",
+                "name": "hero_headline_accent",
+                "type": "text",
+                "instructions": "Žodis, kuris bus nuspalvintas žalia/mėlyna spalva (pvz. renesansas.)",
+                "required": 1,
+                "wrapper": { "width": "50" },
+                "default_value": "renesansas.",
+                "show_in_graphql": 1
+            },
+            {
+                "key": "field_hero_subheadline",
+                "label": "Paantraštė",
+                "name": "hero_subheadline",
+                "type": "textarea",
+                "instructions": "Ilgesnis tekstas po pagrindine antrašte",
+                "default_value": "Prabanga, kuria galite vaikščioti. Atkuriame jūsų medinių grindų didybę su moderniausia įranga ir aukščiausios klasės apdaila be streso ir dulkių.",
+                "rows": 3,
+                "show_in_graphql": 1
+            },
+            {
+                "key": "field_hero_cta_primary",
+                "label": "Pagrindinio mygtuko tekstas",
+                "name": "hero_cta_primary",
+                "type": "text",
+                "instructions": "Oranžinio mygtuko tekstas",
+                "wrapper": { "width": "50" },
+                "default_value": "Gaukite Sąmatą",
+                "show_in_graphql": 1
+            },
+            {
+                "key": "field_hero_cta_secondary",
+                "label": "Antrinio mygtuko tekstas",
+                "name": "hero_cta_secondary",
+                "type": "text",
+                "instructions": "Skaidraus mygtuko tekstas",
+                "wrapper": { "width": "50" },
+                "default_value": "Mūsų Darbai",
+                "show_in_graphql": 1
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page",
+                    "operator": "==",
+                    "value": "515" 
+                }
+            ],
+            [
+                {
+                    "param": "page_type",
+                    "operator": "==",
+                    "value": "front_page"
+                }
+            ]
+        ],
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "active": true,
+        "show_in_graphql": 1,
+        "graphql_field_name": "heroSection",
+        "map_graphql_types_from_location_rules": 0,
+        "graphql_types": ["Page"]
+    }
+]

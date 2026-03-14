@@ -1,27 +1,108 @@
+/* Google Fonts: Inter Tight (headings) + Open Sans (body) */
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@700;800;900&family=Open+Sans:wght@400;500;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* ─── Brand CSS Custom Properties ──────────────────────────────────────────── */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-walnut: #5D4037;
+  --color-walnut-dark: #3E2723;
+  --color-walnut-light: #8D6E63;
+  --color-slate-brand: #2C3E50;
+  --color-orange: #E67E22;
+  --color-orange-dark: #CF6D17;
+  --color-orange-light: #F39C12;
+  --color-bg: #F9F9F9;
+  --color-muted: #6B7280;
+  --font-heading: 'Inter Tight', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* ─── Base Reset ───────────────────────────────────────────────────────────── */
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: var(--color-bg);
+    color: var(--color-walnut-dark);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 800;
+    line-height: 1.1;
+    color: var(--color-walnut-dark);
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  button {
+    cursor: pointer;
+    font-family: inherit;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+/* ─── Range slider custom styling ──────────────────────────────────────────── */
+input[type='range'] {
+  -webkit-appearance: none;
+  appearance: none;
 }
 
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--color-orange);
+  box-shadow: 0 2px 8px rgba(230, 126, 34, 0.4);
+  cursor: pointer;
+  margin-top: -3px;
+}
+
+input[type='range']::-moz-range-thumb {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--color-orange);
+  box-shadow: 0 2px 8px rgba(230, 126, 34, 0.4);
+  cursor: pointer;
+  border: none;
+}
+
+/* ─── Utility classes ──────────────────────────────────────────────────────── */
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
+
+/* ─── Scroll Margin for Sticky Header ─────────────────────────────────────── */
+section {
+  scroll-margin-top: 80px;
+}
+
