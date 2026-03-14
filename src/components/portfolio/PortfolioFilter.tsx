@@ -9,12 +9,13 @@ import { portfolio } from '@/lib/content'
 interface PortfolioFilterProps {
   activeFilter: string
   onFilterChange: (filter: string) => void
+  dynamicCategories: string[]
 }
 
-export default function PortfolioFilter({ activeFilter, onFilterChange }: PortfolioFilterProps) {
+export default function PortfolioFilter({ activeFilter, onFilterChange, dynamicCategories }: PortfolioFilterProps) {
   return (
     <div className="flex flex-wrap gap-3 mb-10">
-      {portfolio.filterLabels.map((label) => (
+      {dynamicCategories.map((label) => (
         <button
           key={label}
           onClick={() => onFilterChange(label)}

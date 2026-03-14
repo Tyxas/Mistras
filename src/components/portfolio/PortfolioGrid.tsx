@@ -30,13 +30,20 @@ export default function PortfolioGrid({ initialProjects = PLACEHOLDER_PROJECTS }
 
   const projectsToUse = initialProjects.length > 0 ? initialProjects : PLACEHOLDER_PROJECTS
 
+  // Dynamically calculate unique categories from projects
+  const dynamicCategories = ['Visi', ...Array.from(new Set(projectsToUse.map(p => p.category)))]
+
   const filteredProjects = filter === 'Visi'
     ? projectsToUse
     : projectsToUse.filter((p) => p.category === filter)
 
   return (
     <>
-      <PortfolioFilter activeFilter={filter} onFilterChange={setFilter} />
+      <PortfolioFilter 
+        activeFilter={filter} 
+        onFilterChange={setFilter} 
+        dynamicCategories={dynamicCategories} 
+      />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {filteredProjects.map((project, i) => (
