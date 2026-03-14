@@ -14,7 +14,7 @@ export async function fetchAPI(query: string, { variables }: { variables?: Recor
     headers: {
       'Content-Type': 'application/json',
     },
-    next: { revalidate: 3600 }, // Refreshes page automatically every 1 hour
+    next: { revalidate: 60 }, // Refreshes page automatically every 1 minute
     body: JSON.stringify({
       query,
       variables,
