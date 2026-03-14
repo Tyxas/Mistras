@@ -12,7 +12,7 @@ export interface PortfolioProject {
   id: string
   title: string
   type: string
-  category: string
+  categories: string[]
   image?: string
   gradient?: string
   area: string

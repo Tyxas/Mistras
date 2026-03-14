@@ -105,7 +105,7 @@ export async function getPortfolioItems() {
     id: post.id,
     title: post.title,
     description: post.content ? post.content.replace(/<[^>]*>/g, '').substring(0, 160) + (post.content.length > 160 ? '...' : '') : '',
-    category: post.categories?.nodes?.[0]?.name || 'Projektai',
+    categories: post.categories?.nodes?.map(c => c.name) || ['Projektai'],
     type: post.portfolioDetails?.projectType || 'Grindų šlifavimas',
     area: post.portfolioDetails?.area || '',
     duration: post.portfolioDetails?.duration || '',

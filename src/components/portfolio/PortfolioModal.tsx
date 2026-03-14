@@ -90,7 +90,7 @@ export default function PortfolioModal({ project, onClose }: PortfolioModalProps
                 </div>
                 <div className="bg-bg rounded-brand p-4">
                   <div className="text-xs text-muted uppercase tracking-wider mb-1">Kategorija</div>
-                  <div className="font-heading font-bold text-walnut-dark">{project.category}</div>
+                  <div className="font-heading font-bold text-walnut-dark">{project.categories.join(', ')}</div>
                 </div>
               </div>
 
