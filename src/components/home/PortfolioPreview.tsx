@@ -9,15 +9,16 @@ import { useInView } from 'react-intersection-observer'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { portfolio } from '@/lib/content'
+import { PortfolioProject } from '@/components/portfolio/PortfolioCard'
 
 // Placeholder data until WordPress is connected
-const placeholderProjects = [
+const placeholderProjects: Partial<PortfolioProject>[] = [
   { title: 'Žvėrynas', type: 'Ąžuolo parketas · Lakavimas', image: '/images/portfolio/portfolio-zverynas.png' },
   { title: 'Senamiestis', type: 'Dažytos grindys · Šlifavimas', image: '/images/portfolio/portfolio-senamiestis.png' },
   { title: 'Restoranas', type: 'Komercinės grindys · Bona', image: '/images/portfolio/portfolio-restaurant.png' },
 ]
 
-export default function PortfolioPreview({ initialProjects = [] }: { initialProjects?: any[] }) {
+export default function PortfolioPreview({ initialProjects = [] }: { initialProjects?: PortfolioProject[] }) {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.15 })
 
   const projectsToUse = initialProjects.length > 0 ? initialProjects.slice(0, 3) : placeholderProjects
@@ -47,8 +48,8 @@ export default function PortfolioPreview({ initialProjects = [] }: { initialProj
             >
               {(project.image || project.afterImage) ? (
                 <Image
-                  src={project.image || project.afterImage}
-                  alt={project.title}
+                  src={(project.image || project.afterImage) as string}
+                  alt={project.title || ''}
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
                 />

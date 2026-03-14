@@ -4,7 +4,6 @@
  * PortfolioFilter — Horizontal filter tabs for portfolio categories.
  * Active tab gets orange highlight.
  */
-import { portfolio } from '@/lib/content'
 
 interface PortfolioFilterProps {
   activeFilter: string

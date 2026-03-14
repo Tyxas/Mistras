@@ -79,7 +79,21 @@ export async function getPortfolioItems() {
     }
   `);
 
-  return data?.posts?.nodes?.map((post: any) => ({
+  return data?.posts?.nodes?.map((post: {
+    id: string;
+    title: string;
+    content?: string;
+    categories?: { nodes: { name: string }[] };
+    portfolioDetails?: {
+      projectType?: string;
+      area?: string;
+      duration?: string;
+      location?: string;
+      beforeImage?: string;
+      afterImage?: string;
+    };
+    featuredImage?: { node: { sourceUrl: string } };
+  }) => ({
     id: post.id,
     title: post.title,
     description: post.content?.replace(/<[^>]*>/g, '').substring(0, 160) + '...',
