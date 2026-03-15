@@ -74,7 +74,15 @@ export default function TestimonialsCarousel() {
 
               {/* Source label */}
               <div className="text-[11px] text-muted mb-6 uppercase tracking-wider font-semibold">
-                Šaltinis: {review.source}
+                Šaltinis:{' '}
+                <a 
+                  href="https://paslaugos.lt/jonas-jg280" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-orange transition-colors underline decoration-dotted underline-offset-2"
+                >
+                  {review.source}
+                </a>
               </div>
 
               {/* Reviewer */}
