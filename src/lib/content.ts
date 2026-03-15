@@ -22,13 +22,13 @@ export const nav = {
 export const hero = {
   eyebrow: 'Šeimos verslas · Vilnius · Nuo 1994',
   headline: 'Grindų šlifavimas',
-  headlineAccent: 'be dulkių ir streso.',
+  headlineAccent: 'be streso ir rūpesčių.',
   subheadline: '30 metų meistrystė, premium medžiagos (Bona, Osmo) ir HEPA technologija – jūsų namai bus kaip nauji.',
   ctaPrimary: 'Gauti nemokamą sąmatą',
   ctaSecondary: 'Peržiūrėti darbus',
   badges: [
     'Nuo 1994 m.',
-    'Be dulkių',
+    'Laiku ir tvarkingai',
     'Nemokama sąmata',
     'Kokybės garantija',
   ],
@@ -160,9 +160,9 @@ export const whyUs = {
   subtext: 'Esame meistrai, kurie restauruoja namų jaukumą. Mūsų darbas – investicija, ne išlaidos.',
   pillars: [
     {
-      icon: '🫁',
-      title: 'Be dulkių',
-      desc: 'HEPA technologija surenka 99.9% dulkių. Šeimos su vaikais ir alergikais – kviečiame drąsiai.',
+      icon: '⏱️',
+      title: 'Laiku ir tvarkingai',
+      desc: 'Darbų grafikų laikymasis ir preciziška tvarka objekte. Jūsų namai liks tokie pat švarūs, kaip ir prieš darbus.',
     },
     {
       icon: '🎓',
