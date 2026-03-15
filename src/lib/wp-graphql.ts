@@ -115,3 +115,43 @@ export async function getPortfolioItems() {
     afterImage: post.portfolioDetails?.afterImage?.node?.sourceUrl || '',
   }));
 }
+
+export async function getAboutPageData() {
+  const data = await fetchAPI(`
+    query AboutPageQuery {
+      page(id: "apie-mus", idType: URI) {
+        aboutPageData {
+          aboutHeroEyebrow
+          aboutHeroHeadline
+          aboutHeroHeadlineAccent
+          aboutHeroSubheadline
+          aboutIntroTitle
+          aboutIntroText
+          aboutIntroImage {
+            node {
+              sourceUrl
+            }
+          }
+          aboutServicesTitle
+          aboutServicesList
+          aboutHistoryTag
+          aboutHistoryHeadline
+          aboutHistoryImage {
+            node {
+              sourceUrl
+            }
+          }
+          aboutHistoryP1
+          aboutHistoryP2
+          aboutHistoryP3
+          aboutWorksTag
+          aboutWorksHeadline
+          aboutWorksText
+          aboutWorksClosing
+        }
+      }
+    }
+  `);
+
+  return data?.page?.aboutPageData;
+}

@@ -1,0 +1,197 @@
+[
+  {
+    "key": "group_about_page",
+    "title": "Apie Mus Puslapis",
+    "fields": [
+      {
+        "key": "field_about_hero_tab",
+        "label": "Hero Sekcija",
+        "name": "",
+        "type": "tab",
+        "placement": "top",
+        "endpoint": 0
+      },
+      {
+        "key": "field_about_hero_eyebrow",
+        "label": "Antraštė viršuje (Eyebrow)",
+        "name": "about_hero_eyebrow",
+        "type": "text",
+        "instructions": "Pvz: Tikra šeimos meistrystė",
+        "show_in_graphql": 1
+      },
+      {
+        "key": "field_about_hero_headline",
+        "label": "Pagrindinė antraštė",
+        "name": "about_hero_headline",
+        "type": "text",
+        "instructions": "Pvz: Kuriame grindis,",
+        "show_in_graphql": 1
+      },
+      {
+        "key": "field_about_hero_headline_accent",
+        "label": "Antraštės akcentas",
+        "name": "about_hero_headline_accent",
+        "type": "text",
+        "instructions": "Pvz: kurios pasakoja istoriją.",
+        "show_in_graphql": 1
+      },
+      {
+        "key": "field_about_hero_subheadline",
+        "label": "Paantraštė",
+        "name": "about_hero_subheadline",
+        "type": "textarea",
+        "show_in_graphql": 1
+      },
+      {
+        "key": "field_about_intro_tab",
+        "label": "Intro ir Paslaugos",
+        "name": "",
+        "type": "tab",
+        "placement": "top",
+        "endpoint": 0
+      },
+      {
+        "key": "field_about_intro_title",
+        "label": "Intro Antraštė",
+        "name": "about_intro_title",
+        "type": "text",
+        "show_in_graphql": 1
+      },
+      {
+        "key": "field_about_intro_text",
+        "label": "Intro Tekstas",
+        "name": "about_intro_text",
+        "type": "textarea",
+        "show_in_graphql": 1
+      },
+      {
+        "key": "field_about_intro_image",
+        "label": "Intro Nuotrauka",
+        "name": "about_intro_image",
+        "type": "image",
+        "return_format": "array",
+        "show_in_graphql": 1
+      },
+      {
+        "key": "field_about_services_title",
+        "label": "Paslaugų Antraštė",
+        "name": "about_services_title",
+        "type": "text",
+        "show_in_graphql": 1
+      },
+      {
+        "key": "field_about_services_list",
+        "label": "Paslaugų sąrašas (po vieną eilutėje)",
+        "name": "about_services_list",
+        "type": "textarea",
+        "instructions": "Kiekviena paslauga turi būti naujoje eilutėje",
+        "show_in_graphql": 1
+      },
+      {
+        "key": "field_about_history_tab",
+        "label": "Istorija",
+        "name": "",
+        "type": "tab",
+        "placement": "top",
+        "endpoint": 0
+      },
+      {
+        "key": "field_about_history_tag",
+        "label": "Skaidrės žyma (mini)",
+        "name": "about_history_tag",
+        "type": "text",
+        "show_in_graphql": 1
+      },
+      {
+        "key": "field_about_history_headline",
+        "label": "Istorijos Antraštė",
+        "name": "about_history_headline",
+        "type": "text",
+        "show_in_graphql": 1
+      },
+      {
+        "key": "field_about_history_image",
+        "label": "Istorijos Nuotrauka",
+        "name": "about_history_image",
+        "type": "image",
+        "return_format": "array",
+        "show_in_graphql": 1
+      },
+      {
+        "key": "field_about_history_p1",
+        "label": "Istorija: 1 dalis",
+        "name": "about_history_p1",
+        "type": "textarea",
+        "show_in_graphql": 1
+      },
+      {
+        "key": "field_about_history_p2",
+        "label": "Istorija: 2 dalis (akcentuota/kursyvu)",
+        "name": "about_history_p2",
+        "type": "textarea",
+        "show_in_graphql": 1
+      },
+      {
+        "key": "field_about_history_p3",
+        "label": "Istorija: 3 dalis",
+        "name": "about_history_p3",
+        "type": "textarea",
+        "show_in_graphql": 1
+      },
+      {
+        "key": "field_about_works_tab",
+        "label": "Darbai ir Objektai",
+        "name": "",
+        "type": "tab",
+        "placement": "top",
+        "endpoint": 0
+      },
+      {
+        "key": "field_about_works_tag",
+        "label": "Skaidrės žyma (mini)",
+        "name": "about_works_tag",
+        "type": "text",
+        "show_in_graphql": 1
+      },
+      {
+        "key": "field_about_works_headline",
+        "label": "Darbų Antraštė",
+        "name": "about_works_headline",
+        "type": "text",
+        "show_in_graphql": 1
+      },
+      {
+        "key": "field_about_works_text",
+        "label": "Darbų Tekstas",
+        "name": "about_works_text",
+        "type": "textarea",
+        "show_in_graphql": 1
+      },
+      {
+        "key": "field_about_works_closing",
+        "label": "Baigiamasis sakinys",
+        "name": "about_works_closing",
+        "type": "text",
+        "show_in_graphql": 1
+      }
+    ],
+    "location": [
+      [
+        {
+          "param": "page",
+          "operator": "==",
+          "value": "apie-mus"
+        }
+      ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "active": true,
+    "description": "",
+    "show_in_graphql": 1,
+    "graphql_field_name": "aboutPageData"
+  }
+]
