@@ -9,7 +9,7 @@
  */
 import { motion } from 'framer-motion'
 import { hero } from '@/lib/content'
-import BeforeAfterSlider from '@/components/shared/BeforeAfterSlider'
+import Image from 'next/image'
 
 export interface HeroData {
   heroEyebrow?: string;
@@ -128,7 +128,14 @@ export default function HeroSection({ data }: { data?: HeroData }) {
             >
               <source src="/videos/sanding.mp4" type="video/mp4" />
               {/* Fallback image if video fails or is missing */}
-              <img src="/images/portfolio/portfolio-zverynas.png" alt="Grindų šlifavimas" className="w-full h-full object-cover" />
+              <div className="absolute inset-0">
+                <Image 
+                  src="/images/portfolio/portfolio-zverynas.png" 
+                  alt="Grindų šlifavimas" 
+                  fill
+                  className="object-cover"
+                />
+              </div>
             </video>
             {/* Play overlay for aesthetic */}
             <div className="absolute inset-0 bg-gradient-to-t from-walnut-dark/40 to-transparent pointer-events-none" />
