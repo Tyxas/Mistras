@@ -41,7 +41,7 @@ const services = [
     title: 'Parketo šlifavimas',
     subtitle: 'Pilnas atnaujinimo ciklas',
     description:
-      'Pilnas parketo šlifavimo ciklas – nuo senų lako sluoksnių nuėmimo iki galutinio paviršiaus paruošimo. Naudojame profesionalią Lagler įrangą su integruotais dulkių surinkimo sistemomis.',
+      'Pilnas parketo šlifavimo ciklas – nuo senų lako sluoksnių nuėmimo iki galutinio paviršiaus paruošimo. Naudojame profesionalią Lagler įrangą, kuri užtikrina preciziškumą ir švarų rezultatą.',
     features: [
       'Senų lako ar alyvos sluoksnių šalinimas',
       'Kelių grūdų nuoseklus šlifavimas',
@@ -155,7 +155,7 @@ const services = [
 const processSteps = [
   { num: '01', title: 'Apžiūra ir sąmata', desc: 'Atvykstame, įvertiname grindų būklę, pateikiame detalią ir nemokamą sąmatą.' },
   { num: '02', title: 'Darbų planavimas', desc: 'Suderinami terminai, medžiagų pasirinkimas, pateikiamas tikslus darbų grafikas.' },
-  { num: '03', title: 'Šlifavimas', desc: 'Profesionali Lagler įranga ir tvarkingas procesas – be triukšmo ir streso.' },
+  { num: '03', title: 'Šlifavimas', desc: 'Profesionali Lagler įranga – greita, tvarkinga, minimali suirutė namuose.' },
   { num: '04', title: 'Apdaila', desc: 'Lakavimas arba alyvavimas pasirinktomis medžiagomis (Bona, Osmo, Opal).' },
   { num: '05', title: 'Rezultatas', desc: 'Grindys kaip naujos. Pateikiame priežiūros instrukciją ir kokybės garantiją.' },
 ]

@@ -21,8 +21,8 @@ export const nav = {
 
 export const hero = {
   eyebrow: 'Šeimos verslas · Vilnius · Nuo 1994',
-  headline: 'Grindų šlifavimas',
-  headlineAccent: 'be streso ir rūpesčių.',
+  headline: 'Grindų šlifavimas su 30 metų',
+  headlineAccent: 'meistrystės garantija',
   subheadline: '30 metų meistrystė, premium medžiagos (Bona, Osmo) ir švarus bei tvarkingas procesas – jūsų namai bus kaip nauji.',
   ctaPrimary: 'Gauti nemokamą sąmatą',
   ctaSecondary: 'Peržiūrėti darbus',
@@ -41,7 +41,6 @@ export const trustBar = {
     { value: '30+', label: 'Metų rinkoje' },
     { value: '500+', label: 'Patenkintų klientų' },
     { value: '5★', label: 'Google įvertinimas' },
-    { value: '100%', label: 'Švara' },
   ],
 }
 
@@ -160,9 +159,9 @@ export const whyUs = {
   subtext: 'Esame meistrai, kurie restauruoja namų jaukumą. Mūsų darbas – investicija, ne išlaidos.',
   pillars: [
     {
-      icon: '⏱️',
-      title: 'Laiku ir tvarkingai',
-      desc: 'Darbų grafikų laikymasis ir preciziška tvarka objekte. Jūsų namai liks tokie pat švarūs, kaip ir prieš darbus.',
+      icon: '🤝',
+      title: 'Tvarkome po savęs',
+      desc: 'Paliekame namus švariais. Jokio chaoso, jokių papildomų rūpesčių.',
     },
     {
       icon: '🎓',
@@ -203,8 +202,8 @@ export const faq = {
   headline: 'Dažniausiai užduodami klausimai',
   items: [
     {
-      q: 'Ar procesas bus švarus?',
-      a: 'Taip. Nors šlifavimas yra techninis procesas, naudojame modernią įrangą su integruotais siurbliais ir ciklonais, kuri užtikrina maksimalią švarą ir tvarką.',
+      q: 'Ar galima gyventi namuose šlifavimo metu?',
+      a: 'Nors šlifavimas yra techninis procesas, naudojame modernią įrangą su integruotais siurbliais, kuri užtikrina maksimalią švarą ir tvarką, todėl trumpalaikis buvimas namuose yra įmanomas.',
     },
     {
       q: 'Nuo ko priklauso šlifavimo kaina?',
@@ -217,10 +216,6 @@ export const faq = {
     {
       q: 'Kiek laiko trunka šlifavimas?',
       a: 'Standartinis butas (50–70 m²) – 1–2 dienos. Lakui išdžiūti reikia 12–24 val., alyvai – 8–12 val. Pateikiame tikslų grafiką prieš pradedant darbus.',
-    },
-    {
-      q: 'Ar galima gyventi namuose šlifavimo metu?',
-      a: 'Rekomenduojame laikinai išsikraustyti iš šlifuojamo kambario. Dėl mūsų naudojamos technologijos namai išlieka tvarkingi, o dulkių sklaida yra minimali.',
     },
     {
       q: 'Kokia garantija suteikiama darbams?',

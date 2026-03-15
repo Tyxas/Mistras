@@ -122,11 +122,6 @@ export default function Footer() {
               {link.label}
             </Link>
           ))}
-          {/* Titas special badge - subtle blue/green accent */}
-          <div className="flex items-center gap-1.5 px-2 py-0.5 rounded bg-white/5 border border-emerald-500/20 text-[10px] font-bold text-cyan-400 opacity-60 hover:opacity-100 transition-opacity cursor-default">
-            <span className="w-1 h-1 rounded-full bg-emerald-400 shadow-[0_0_5px_rgba(52,211,153,0.8)]"></span>
-            MEISTRYSTĖ 55
-          </div>
         </div>
       </div>
     </footer>

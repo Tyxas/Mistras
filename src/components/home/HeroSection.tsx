@@ -24,8 +24,8 @@ export default function HeroSection({ data }: { data?: HeroData }) {
   // Use WP data or fallback to offline content
   const eyebrow = data?.heroEyebrow || hero.eyebrow;
   const headline = data?.heroHeadline || hero.headline;
-  const subheadline = (data?.heroSubheadline || hero.subheadline).replace('be streso ir dulkių', 'be streso ir rūpesčių');
-  const headlineAccent = (data?.heroHeadlineAccent || hero.headlineAccent).replace('be dulkių ir streso', 'be streso ir rūpesčių');
+  const subheadline = data?.heroSubheadline || hero.subheadline;
+  const headlineAccent = data?.heroHeadlineAccent || hero.headlineAccent;
   const ctaPrimary = data?.heroCtaPrimary || hero.ctaPrimary;
   const ctaSecondary = data?.heroCtaSecondary || hero.ctaSecondary;
 
@@ -148,8 +148,8 @@ export default function HeroSection({ data }: { data?: HeroData }) {
               <div className="text-xs text-white/60 mt-1">Metų patirties</div>
             </div>
             <div className="bg-white/[0.08] border border-white/10 rounded-brand p-5 text-center backdrop-blur-sm">
-              <span className="font-heading text-3xl font-black text-orange block">500+</span>
-              <div className="text-xs text-white/60 mt-1">Projektų</div>
+              <span className="font-heading text-3xl font-black text-orange block">5★</span>
+              <div className="text-xs text-white/60 mt-1">Google įvertinimas</div>
             </div>
           </div>
         </motion.div>

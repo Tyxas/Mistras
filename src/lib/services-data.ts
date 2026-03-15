@@ -109,13 +109,13 @@ export const servicesData: Record<string, ServicePageData> = {
       sectionTag: 'DUK',
       headline: 'Klausimai apie parketo šlifavimą',
       items: [
-        { q: 'Ar procesas bus švarus?', a: 'Taip. Nors šlifavimas yra techninis procesas, naudojame modernią įrangą, kuri užtikrina, kad jūsų namai liktų tvarkingi. Minimali dulkių sklaida suvaldoma profesionaliai.' },
+        { q: 'Ar procesas bus švarus?', a: 'Taip. Nors šlifavimas yra techninis procesas, naudojame modernią įrangą, kuri užtikrina, kad jūsų namai liktų tvarkingi. Minimali suirutė suvaldoma profesionaliai.' },
         { q: 'Kiek laiko trunka parketo šlifavimas?', a: 'Vidutinis butas (50–70 m²) – 1–2 dienos. Lakui išdžiūti reikia 12–24 val., alyvai – 8–12 val. Tikslų grafiką pateikiame prieš darbų pradžią.' },
         { q: 'Ar galima šlifuoti tik dalį kambario?', a: 'Techniškai galima, tačiau nerekomenduojame. Naujai nušlifuota vieta visada bus šviežesnės spalvos nei likusios grindys. Geriau šlifuoti visą kambarį.' },
         { q: 'Ar reikia išsikraustyti šlifavimo metu?', a: 'Rekomenduojame išsikraustyti iš šlifuojamo kambario. Mūsų naudojama technologija užtikrina tvarkingą darbą, tad galima gyventi kitose patalpose.' },
         { q: 'Kiek kartų galima šlifuoti parketą?', a: 'Tai priklauso nuo parketo storio. Standartinis 22mm parketas gali būti šlifuojamas 5–8 kartus. Prieš darbą įvertiname likusį medžio sluoksnį.' },
         { q: 'Ar dirbate savaitgaliais?', a: 'Taip, dirbame ir savaitgaliais. Komerciniam sektoriui – ir naktimis, kad nekliudytume veiklai.' },
-        { q: 'Ar tinka alergikams?', a: 'Taip. Mūsų naudojama sistema sulaiko net smulkiausias dulkių daleles, kurios sukelia alergines reakcijas. Tai viena pagrindinių priežasčių, kodėl klientai renkasi mus.' },
+        { q: 'Ar galima šlifuoti po dažymo?', a: 'Rekomenduojame pirmiausia šlifuoti ir lakuoti grindis, o tik tada dažyti sienas. Nors naudojame modernią įrangą, švaros vardan geriau laikytis šios sekos.' },
       ],
     },
     cta: {

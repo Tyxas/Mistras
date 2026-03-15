@@ -58,7 +58,7 @@ const data: ServicePageData = {
   faqTag: 'DUK',
   faqHeadline: 'Klausimai apie parketo šlifavimą',
   faqItems: [
-    { q: 'Ar procesas bus švarus?', a: 'Taip. Nors šlifavimas yra techninis procesas, naudojame modernią įrangą, kuri užtikrina, kad jūsų namai liktų tvarkingi. Minimali dulkių sklaida suvaldoma profesionaliai.' },
+    { q: 'Ar procesas bus švarus?', a: 'Taip. Nors šlifavimas yra techninis procesas, naudojame modernią įrangą, kuri užtikrina, kad jūsų namai liktų tvarkingi. Minimali suirutė suvaldoma profesionaliai.' },
     { q: 'Kiek laiko trunka parketo šlifavimas?', a: 'Vidutinis butas (50–70 m²) – 1–2 dienos. Lakui išdžiūti reikia 12–24 val., alyvai – 8–12 val. Tikslų grafiką pateikiame prieš darbų pradžią.' },
     { q: 'Ar galima šlifuoti tik dalį kambario?', a: 'Techniškai galima, tačiau nerekomenduojame. Naujai nušlifuota vieta visada bus šviežesnės spalvos nei likusios grindys. Geriau šlifuoti visą kambarį.' },
     { q: 'Ar reikia išsikraustyti šlifavimo metu?', a: 'Rekomenduojame išsikraustyti iš šlifuojamo kambario. Mūsų naudojama technologija užtikrina tvarkingą darbą, tad galima gyventi kitose patalpose.' },
