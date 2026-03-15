@@ -9,6 +9,7 @@ import { useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import BeforeAfterSlider from '@/components/shared/BeforeAfterSlider'
 import type { PortfolioProject } from '@/components/portfolio/PortfolioCard'
+import { contactInfo } from '@/lib/content'
 
 interface PortfolioModalProps {
   project: PortfolioProject | null
@@ -96,13 +97,21 @@ export default function PortfolioModal({ project, onClose }: PortfolioModalProps
 
               <p className="text-muted text-sm leading-relaxed">{project.description}</p>
 
-              <a
-                href="#kontaktai"
-                onClick={onClose}
-                className="inline-flex items-center gap-2 mt-6 bg-orange hover:bg-orange-dark text-white px-6 py-3 rounded-[10px] font-heading font-bold text-sm transition-colors"
-              >
-                ✉ Gauti panašią sąmatą
-              </a>
+              <div className="flex flex-wrap gap-4 mt-6">
+                <a
+                  href="#kontaktai"
+                  onClick={onClose}
+                  className="inline-flex items-center gap-2 bg-orange hover:bg-orange-dark text-white px-6 py-3 rounded-[10px] font-heading font-bold text-sm transition-colors"
+                >
+                  ✉ Gauti panašią sąmatą
+                </a>
+                <a
+                  href={`tel:${contactInfo.phone}`}
+                  className="inline-flex items-center gap-2 border-2 border-walnut-dark text-walnut-dark hover:bg-walnut-dark hover:text-white px-6 py-3 rounded-[10px] font-heading font-bold text-sm transition-all"
+                >
+                  📞 Skambinti (+370 604 10608)
+                </a>
+              </div>
             </div>
           </motion.div>
         </motion.div>
