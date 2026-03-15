@@ -15,7 +15,7 @@ export default function TrustBar() {
   return (
     <div ref={ref} className="bg-walnut-dark py-8 px-[5%]">
         {/* Stats */}
-        <div className="w-full flex flex-wrap items-center justify-around gap-8">
+        <div className="max-w-[1200px] mx-auto flex flex-wrap items-center justify-around gap-8">
           {trustBar.stats.map((stat, i) => (
             <motion.div
               key={stat.label}
