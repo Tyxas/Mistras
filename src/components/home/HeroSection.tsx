@@ -24,8 +24,8 @@ export default function HeroSection({ data }: { data?: HeroData }) {
   // Use WP data or fallback to offline content
   const eyebrow = data?.heroEyebrow || hero.eyebrow;
   const headline = data?.heroHeadline || hero.headline;
-  const headlineAccent = data?.heroHeadlineAccent || hero.headlineAccent;
-  const subheadline = data?.heroSubheadline || hero.subheadline;
+  const subheadline = (data?.heroSubheadline || hero.subheadline).replace('be streso ir dulkių', 'be streso ir rūpesčių');
+  const headlineAccent = (data?.heroHeadlineAccent || hero.headlineAccent).replace('be dulkių ir streso', 'be streso ir rūpesčių');
   const ctaPrimary = data?.heroCtaPrimary || hero.ctaPrimary;
   const ctaSecondary = data?.heroCtaSecondary || hero.ctaSecondary;
 
