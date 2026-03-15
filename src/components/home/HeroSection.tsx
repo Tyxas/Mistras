@@ -92,22 +92,6 @@ export default function HeroSection({ data }: { data?: HeroData }) {
               📸 {ctaSecondary}
             </a>
           </div>
-
-          {/* Trust badges */}
-          <div className="flex flex-wrap gap-3 mt-10">
-            {hero.badges.map((badge) => (
-              <div
-                key={badge}
-                className="flex items-center gap-1.5 bg-white/[0.08] border border-white/[0.12] text-white/80 px-3.5 py-1.5 rounded-lg text-xs font-semibold"
-              >
-                {badge === 'Nuo 1994 m.' && '✅'}
-                {badge === 'Be dulkių' && '🫁'}
-                {badge === 'Nemokama sąmata' && '🎁'}
-                {badge === 'Kokybės garantija' && '💎'}
-                {' '}{badge}
-              </div>
-            ))}
-          </div>
         </motion.div>
 
         {/* Right column */}
@@ -119,29 +103,13 @@ export default function HeroSection({ data }: { data?: HeroData }) {
         >
           {/* Before/After slider */}
           <BeforeAfterSlider
-            beforeSrc="placeholder-before"
-            afterSrc="placeholder-after"
-            beforeAlt="Senos parketo grindys prieš šlifavimą"
-            afterAlt="Atnaujintos parketo grindys po šlifavimo"
-            location="Žvėrynas"
+            beforeSrc="https://darkgoldenrod-wolverine-791184.hostingersite.com/wp-content/uploads/2026/03/1000028134-1-scaled.jpg"
+            afterSrc="https://darkgoldenrod-wolverine-791184.hostingersite.com/wp-content/uploads/2026/03/1000028135-1-scaled.jpg"
+            beforeAlt="Užupis projektas prieš šlifavimą"
+            afterAlt="Užupis projektas po šlifavimo"
+            location="Užupis"
             projectType="Ąžuolo parketas"
           />
-
-          {/* Stat cards */}
-          <div className="grid grid-cols-3 gap-3">
-            <div className="bg-white/[0.08] border border-white/10 rounded-brand p-5 text-center backdrop-blur-sm">
-              <span className="font-heading text-3xl font-black text-orange block">30+</span>
-              <div className="text-xs text-white/60 mt-1">Metų patirties</div>
-            </div>
-            <div className="bg-white/[0.08] border border-white/10 rounded-brand p-5 text-center backdrop-blur-sm">
-              <span className="font-heading text-3xl font-black text-orange block">500+</span>
-              <div className="text-xs text-white/60 mt-1">Projektų</div>
-            </div>
-            <div className="bg-white/[0.08] border border-white/10 rounded-brand p-5 text-center backdrop-blur-sm">
-              <span className="font-heading text-3xl font-black text-orange block">0%</span>
-              <div className="text-xs text-white/60 mt-1">Dulkių</div>
-            </div>
-          </div>
         </motion.div>
       </div>
     </section>
