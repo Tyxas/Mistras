@@ -12,6 +12,8 @@
 
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { ICON_MAP } from '@/components/shared/Icons'
+import React from 'react'
 
 // ─── SEO ─────────────────────────────────────────────────────────────────────
 
@@ -33,7 +35,7 @@ const services = [
   {
     id: 'parketo-slifavimas',
     href: '/parketo-slifavimas/',
-    icon: '🪵',
+    icon: 'FLOOR_ICON',
     color: 'from-amber-900/20 to-amber-700/10',
     borderHover: 'hover:border-amber-700/40',
     tag: 'Populiariausia paslauga',
@@ -151,6 +153,30 @@ const services = [
     cta: 'Susisiekti',
   },
   {
+    id: 'palangiu-slifavimas',
+    href: '/palangiu-slifavimas/',
+    icon: '🪟',
+    color: 'from-blue-900/20 to-blue-700/10',
+    borderHover: 'hover:border-blue-600/40',
+    tag: 'Tvarus sprendimas',
+    tagColor: 'bg-blue-100 text-blue-700',
+    title: 'Palangių šlifavimas',
+    subtitle: 'Atnaujinimas ir restauravimas',
+    description:
+      'Medinių palangių atnaujinimas: įbrėžimų šalinimas, šlifavimas ir padengimas atspariu lakų ar alyva. Sugrąžiname palangėms pradinę išvaizdą.',
+    features: [
+      'Kaip naujos – be nusidėvėjimo žymių',
+      'Atspari apsauga (Bona, Osmo)',
+      'Visos medienos rūšys',
+      'Preciziškas darbas kampuose',
+      'Tvaresnis pasirinkimas nei keitimas',
+    ],
+    price: 'pagal užklausą',
+    minOrder: 'Min. užsakymas 490€',
+    duration: 'Iki 1 dienos',
+    cta: 'Sužinoti daugiau',
+  },
+  {
     id: 'grindjuosciu-tvirtinimas',
     href: '/grindjuosciu-tvirtinimas/',
     icon: '📏',
@@ -210,8 +236,13 @@ export default function PaslaugosPage() {
             {services.map(s => (
               <a key={s.id} href={`#${s.id}`}
                 className="bg-white/10 hover:bg-white/20 border border-white/15 text-white/80
-                            text-sm font-medium px-4 py-2 rounded-full transition-colors">
-                {s.icon} {s.title}
+                            text-sm font-medium px-4 py-2 rounded-full transition-colors flex items-center gap-2">
+                <span className="w-5 h-5 flex items-center justify-center scale-75">
+                  {typeof s.icon === 'string' && ICON_MAP[s.icon] 
+                    ? ICON_MAP[s.icon] 
+                    : s.icon}
+                </span>
+                {s.title}
               </a>
             ))}
           </div>
@@ -230,7 +261,11 @@ export default function PaslaugosPage() {
                 {/* LEFT — content */}
                 <div className={`bg-gradient-to-br ${s.color} p-8 md:p-10`}>
                   <div className="flex items-start gap-4 mb-5">
-                    <span className="text-4xl flex-shrink-0 mt-1">{s.icon}</span>
+                    <span className="text-4xl flex-shrink-0 mt-1 h-10 w-10 flex items-center justify-center">
+                      {typeof s.icon === 'string' && ICON_MAP[s.icon] 
+                        ? ICON_MAP[s.icon] 
+                        : s.icon}
+                    </span>
                     <div>
                       <div className="flex flex-wrap items-center gap-2 mb-2">
                         <span className={`text-xs font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full ${s.tagColor}`}>
