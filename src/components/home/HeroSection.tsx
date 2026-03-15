@@ -124,7 +124,7 @@ export default function HeroSection({ data }: { data?: HeroData }) {
           className="hidden lg:flex flex-col gap-4"
         >
           {/* Sanding Video */}
-          <div className="relative aspect-video rounded-brand-lg overflow-hidden shadow-brand-lg border-4 border-white/5">
+          <div className="relative aspect-[4/3] rounded-brand-lg overflow-hidden shadow-brand-lg border-4 border-white/5">
             <video
               autoPlay
               loop
@@ -145,18 +145,6 @@ export default function HeroSection({ data }: { data?: HeroData }) {
             </video>
             {/* Play overlay for aesthetic */}
             <div className="absolute inset-0 bg-gradient-to-t from-walnut-dark/40 to-transparent pointer-events-none" />
-          </div>
-
-          {/* Stat cards */}
-          <div className="grid grid-cols-2 gap-3">
-            <div className="bg-white/[0.08] border border-white/10 rounded-brand p-5 text-center backdrop-blur-sm">
-              <span className="font-heading text-3xl font-black text-orange block">30+</span>
-              <div className="text-xs text-white/60 mt-1">Metų patirties</div>
-            </div>
-            <div className="bg-white/[0.08] border border-white/10 rounded-brand p-5 text-center backdrop-blur-sm">
-              <span className="font-heading text-3xl font-black text-orange block">50+</span>
-              <div className="text-xs text-white/60 mt-1">Atsiliepimai</div>
-            </div>
           </div>
         </motion.div>
       </div>
