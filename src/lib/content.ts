@@ -120,7 +120,7 @@ export const services = {
   subtext: 'Nuo parketo šlifavimo iki komercinių patalpų atnaujinimo – atliekame visus medienos priežiūros darbus Vilniuje.',
   cards: [
     {
-      icon: '🪵',
+      icon: 'FLOOR_ICON',
       title: 'Parketo šlifavimas',
       desc: 'Pilnas šlifavimo ciklas – senų lako sluoksnių nuėmimas, kelių grūdų šlifavimas, kraštų apdirbimas.',
       price: 'nuo 10€/m²',
