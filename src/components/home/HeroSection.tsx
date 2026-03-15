@@ -22,10 +22,16 @@ export interface HeroData {
 
 export default function HeroSection({ data }: { data?: HeroData }) {
   // Use WP data or fallback to offline content
+  // Check if WP data contains "dust-free" (be dulkių) - if it does, it's stale and we use local fallback
+  const isStale = (text?: string) => text?.toLowerCase().includes('dulkių') || false;
+
   const eyebrow = data?.heroEyebrow || hero.eyebrow;
-  const headline = data?.heroHeadline || hero.headline;
-  const subheadline = data?.heroSubheadline || hero.subheadline;
-  const headlineAccent = data?.heroHeadlineAccent || hero.headlineAccent;
+  
+  // Force local values if WP data is stale (contains "dust-free" claims)
+  const headline = isStale(data?.heroHeadline) ? hero.headline : (data?.heroHeadline || hero.headline);
+  const headlineAccent = isStale(data?.heroHeadlineAccent) ? hero.headlineAccent : (data?.heroHeadlineAccent || hero.headlineAccent);
+  const subheadline = isStale(data?.heroSubheadline) ? hero.subheadline : (data?.heroSubheadline || hero.subheadline);
+  
   const ctaPrimary = data?.heroCtaPrimary || hero.ctaPrimary;
   const ctaSecondary = data?.heroCtaSecondary || hero.ctaSecondary;
 
