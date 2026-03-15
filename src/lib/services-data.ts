@@ -291,6 +291,60 @@ export const servicesData: Record<string, ServicePageData> = {
       subtext: 'Nemokama apžiūra ir sąmata. Dirbame pagal jūsų grafiką – naktimis ir savaitgaliais.',
     },
   },
+
+  'grindjuosciu-tvirtinimas': {
+    slug: 'grindjuosciu-tvirtinimas',
+    seo: {
+      title: 'Grindjuosčių Tvirtinimas ir Montavimas Vilniuje | UAB Mistras',
+      description: 'Profesionalus grindjuosčių tvirtinimas ir montavimas Vilniuje. Tikslus pjovimas, platus medžiagų pasirinkimas, 30+ metų patirtis. Nemokama apžiūra ir sąmata.',
+      keyword: 'grindjuosčių tvirtinimas Vilniuje',
+    },
+    hero: {
+      eyebrow: 'Grindjuosčių tvirtinimas',
+      headline: 'Grindjuosčių montavimas',
+      headlineAccent: 'tiksliai ir estetiškai.',
+      subheadline: 'Profesionalus grindjuosčių pjovimas ir tvirtinimas. Užtikriname idealų sujungimą kampuose ir tvarkingą bendrą vaizdą po grindų atnaujinimo.',
+      priceTag: 'nuo 25 €/val.',
+      priceNote: 'Priklauso nuo sudėtingumo. Nemokama apžiūra.',
+      badges: ['📏 Tikslus pjovimas', '✨ Estetiškas vaizdas', '🛠️ Visos medžiagos', '💎 Kokybės garantija'],
+    },
+    features: {
+      sectionTag: 'Mūsų privalumai',
+      headline: 'Kodėl montavimą patikėti mums',
+      items: [
+        { icon: '📐', title: 'Preciziškas pjovimas', desc: 'Naudojame profesionalią pjovimo įrangą, kuri užtikrina idealų grindjuosčių sujungimą net ir esant nelygiems kampams.' },
+        { icon: '✨', title: 'Estetiškas užbaigimas', desc: 'Kiekviena detalė svarbi. Grindjuostės suteikia kambariui išbaigtumo pojūtį, todėl jas montuojame itin kruopščiai.' },
+        { icon: '🛠️', title: 'Visų tipų grindjuostės', desc: 'Montuojame MDF, medines, plastikines bei faneruotas grindjuostes. Patariame, kokias rinktis pagal jūsų grindis.' },
+        { icon: '🔗', title: 'Patikimas tvirtinimas', desc: 'Naudojame tik kokybiškus klijus ar specialius tvirtinimo elementus, kurie užtikrina stabilumą ilgus metus.' },
+        { icon: '🤝', title: 'Kompleksinis sprendimas', desc: 'Dažniausiai atliekame kartu su šlifavimu, todėl jums nereikia ieškoti atskirų meistrų smulkiems darbams.' },
+        { icon: '📋', title: 'Nemokama apžiūra', desc: 'Įvertiname patalpos perimetrą, kampų sudėtingumą ir pateikiame detalią sąmatą.' },
+      ],
+    },
+    process: {
+      sectionTag: 'Darbo eiga',
+      headline: 'Kaip vyksta montavimas',
+      steps: [
+        { step: 1, icon: '📋', title: 'Matavimas ir planavimas', desc: 'Išmatuojame tikslų patalpos perimetrą, aptariame grindjuosčių tipą ir tvirtinimo būdą.' },
+        { step: 2, icon: '✂️', title: 'Tikslus pjovimas', desc: 'Grindjuostės pjaunamos specialiu kampiniu pjūklu, užtikrinant idealų prigludimą kampuose.' },
+        { step: 3, icon: '🛠️', title: 'Tvirtinimas', desc: 'Montavimas prie sienų naudojant klijus, vinutes arba specialius klipsus, priklausomai nuo pasirinkto produkto.' },
+        { step: 4, icon: '✅', title: 'Užbaigimas', desc: 'Kampų ir plyšelių užtaisymas specialiu akrilu arba vašku, kad vaizdas būtų vientisas ir estetiškas.' },
+      ],
+    },
+    faq: {
+      sectionTag: 'DUK',
+      headline: 'Klausimai apie grindjuosčių tvirtinimą',
+      items: [
+        { q: 'Ar pačiam reikia pirkti grindjuostes?', a: 'Galite pasirūpinti patys arba galime patarti kur įsigyti geriausiomis kainomis. Taip pat galime pasirūpinti medžiagų atvežimu.' },
+        { q: 'Kiek laiko trunka montavimas?', a: 'Standartiniame bute montavimas paprastai užtrunka iki vienos darbo dienos.' },
+        { q: 'Ar montuojate ant nelygių sienų?', a: 'Stengiamės pasiekti geriausią įmanomą rezultatą, tačiau esant dideliems sienų nelygumams gali likti nedideli tarpeliai, kuriuos užpildome akrilu.' },
+        { q: 'Ar suteikiate garantiją?', a: 'Taip, visoms montavimo paslaugoms suteikiame kokybės garantiją.' },
+      ],
+    },
+    cta: {
+      headline: 'Reikia profesionalaus montavimo?',
+      subtext: 'Susisiekite šiandien – nemokama apžiūra ir patarimai dėl tinkamiausio sprendimo.',
+    },
+  },
 }
 
 /** Get all service slugs for static generation */

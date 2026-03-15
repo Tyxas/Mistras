@@ -150,6 +150,30 @@ const services = [
     duration: 'Susitariama',
     cta: 'Susisiekti',
   },
+  {
+    id: 'grindjuosciu-tvirtinimas',
+    href: '/grindjuosciu-tvirtinimas/',
+    icon: '📏',
+    color: 'from-amber-900/20 to-amber-700/10',
+    borderHover: 'hover:border-amber-700/40',
+    tag: 'Estetinis užbaigimas',
+    tagColor: 'bg-blue-100 text-blue-700',
+    title: 'Grindjuosčių tvirtinimas',
+    subtitle: 'Tikslus montavimas',
+    description:
+      'Profesionalus grindjuosčių pjovimas ir tvirtinimas. Užtikriname idealų sujungimą kampuose ir tvarkingą bendrą vaizdą po grindų atnaujinimo.',
+    features: [
+      'Visų tipų grindjuosčių montavimas',
+      'Preciziškas pjovimas kampiniu pjūklu',
+      'Tvirtinimas klijais, vinutėmis arba klipsais',
+      'Kampų ir tarpelių estetinis užpildymas',
+      'Konsultacija dėl tinkamiausių grindjuosčių',
+    ],
+    price: 'nuo 25 €/val.',
+    minOrder: 'Pagal darbų apimtį',
+    duration: 'Iki 1 dienos (standartinis butas)',
+    cta: 'Sužinoti daugiau',
+  },
 ]
 
 const processSteps = [

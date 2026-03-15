@@ -8,7 +8,7 @@ import GoogleMapEmbed from '@/components/contact/GoogleMapEmbed'
 export const metadata: Metadata = {
   title: 'Kontaktai — Susisiekite su UAB Mistras | Vilnius',
   description:
-    'Susisiekite su UAB Mistras dėl nemokamos grindų šlifavimo sąmatos Vilniuje. Tel. +370 604 10608, el. paštas Jonas@mistras.lt. Pr–Pt 8:00–18:00.',
+    'Susisiekite su UAB Mistras dėl nemokamos grindų šlifavimo sąmatos Vilniuje. Tel. +370 604 10608, el. paštas mistrasvilnius@gmail.com. Pr–Pt 8:00–18:00.',
   alternates: { canonical: 'https://mistras.lt/kontaktai/' },
   openGraph: {
     title: 'Kontaktai | UAB Mistras — Vilnius',
