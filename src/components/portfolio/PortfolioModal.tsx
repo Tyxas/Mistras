@@ -109,7 +109,7 @@ export default function PortfolioModal({ project, onClose }: PortfolioModalProps
                   href={`tel:${contactInfo.phone}`}
                   className="inline-flex items-center gap-2 border-2 border-walnut-dark text-walnut-dark hover:bg-walnut-dark hover:text-white px-6 py-3 rounded-[10px] font-heading font-bold text-sm transition-all"
                 >
-                  📞 Skambinti (+370 604 10608)
+                  Skambinti +370 604 10608
                 </a>
               </div>
             </div>
