@@ -118,11 +118,6 @@ export default function AboutClient({ data }: { data: AboutData }) {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-walnut-dark/60 to-transparent" />
             </div>
-            {/* 55 Easter Egg Badge */}
-            <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-blue-brand text-white rounded-full flex flex-col items-center justify-center border-4 border-white shadow-brand-lg z-10 rotate-12">
-              <span className="text-3xl font-black font-heading">55</span>
-              <span className="text-[0.6rem] font-bold uppercase tracking-tighter">Premium Grade</span>
-            </div>
           </motion.div>
         </div>
       </section>
