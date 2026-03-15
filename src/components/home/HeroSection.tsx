@@ -154,8 +154,8 @@ export default function HeroSection({ data }: { data?: HeroData }) {
               <div className="text-xs text-white/60 mt-1">Metų patirties</div>
             </div>
             <div className="bg-white/[0.08] border border-white/10 rounded-brand p-5 text-center backdrop-blur-sm">
-              <span className="font-heading text-3xl font-black text-orange block">5★</span>
-              <div className="text-xs text-white/60 mt-1">Google įvertinimas</div>
+              <span className="font-heading text-3xl font-black text-orange block">50+</span>
+              <div className="text-xs text-white/60 mt-1">Atsiliepimai</div>
             </div>
           </div>
         </motion.div>

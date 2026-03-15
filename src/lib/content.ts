@@ -40,7 +40,7 @@ export const trustBar = {
     { value: '1994', label: 'Įkurta' },
     { value: '30+', label: 'Metų rinkoje' },
     { value: '500+', label: 'Patenkintų klientų' },
-    { value: '5★', label: 'Google įvertinimas' },
+    { value: '50+', label: 'Atsiliepimai' },
   ],
 }
 
