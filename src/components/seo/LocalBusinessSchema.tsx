@@ -13,7 +13,7 @@ export default function LocalBusinessSchema() {
         '@type': 'LocalBusiness',
         '@id': 'https://mistras.lt/#business',
         name: 'UAB Mistras',
-        description: 'Profesionalus parketo šlifavimas Vilniuje be dulkių. Šeimos verslas nuo 1994 metų.',
+        description: 'Profesionalus parketo šlifavimas Vilniuje greitai ir tvarkingai. Šeimos verslas nuo 1994 metų.',
         url: 'https://mistras.lt',
         telephone: contactInfo.phone,
         email: contactInfo.email,

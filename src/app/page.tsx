@@ -21,10 +21,10 @@ import LocalBusinessSchema from '@/components/seo/LocalBusinessSchema'
 export const metadata: Metadata = {
   title: 'Grindų Šlifavimas Vilniuje | UAB Mistras — Nuo 1994',
   description:
-    'Profesionalus parketo šlifavimas Vilniuje be dulkių. 30+ metų patirtis, premium medžiagos (Bona, Osmo), nemokama sąmata. Skambinkite +370 604 10608.',
+    'Profesionalus parketo šlifavimas Vilniuje greitai ir tvarkingai. 30+ metų patirtis, premium medžiagos (Bona, Osmo), nemokama sąmata. Skambinkite +370 604 10608.',
   openGraph: {
     title: 'Grindų Šlifavimas Vilniuje | UAB Mistras — Nuo 1994',
-    description: 'Profesionalus parketo šlifavimas be dulkių. Šeimos verslas nuo 1994 m.',
+    description: 'Profesionalus parketo šlifavimas greitai ir tvarkingai. Šeimos verslas nuo 1994 m.',
     url: 'https://mistras.lt',
     type: 'website',
     locale: 'lt_LT',

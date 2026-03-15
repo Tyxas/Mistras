@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     template: '%s | UAB Mistras',
   },
   description:
-    'Profesionalus parketo šlifavimas Vilniuje be dulkių. 30+ metų patirtis, premium medžiagos (Bona, Osmo), nemokama sąmata. Skambinkite +370 604 10608.',
+    'Profesionalus parketo šlifavimas Vilniuje greitai ir švariai. 30+ metų patirtis, premium medžiagos (Bona, Osmo), nemokama sąmata. Skambinkite +370 604 10608.',
   metadataBase: new URL('https://mistras.lt'),
   openGraph: {
     type: 'website',

@@ -23,7 +23,7 @@ export const hero = {
   eyebrow: 'Šeimos verslas · Vilnius · Nuo 1994',
   headline: 'Grindų šlifavimas',
   headlineAccent: 'be streso ir rūpesčių.',
-  subheadline: '30 metų meistrystė, premium medžiagos (Bona, Osmo) ir HEPA technologija – jūsų namai bus kaip nauji.',
+  subheadline: '30 metų meistrystė, premium medžiagos (Bona, Osmo) ir švarus bei tvarkingas procesas – jūsų namai bus kaip nauji.',
   ctaPrimary: 'Gauti nemokamą sąmatą',
   ctaSecondary: 'Peržiūrėti darbus',
   badges: [
@@ -41,8 +41,8 @@ export const trustBar = {
     { value: '30+', label: 'Metų rinkoje' },
     { value: '500+', label: 'Patenkintų klientų' },
     { value: '5★', label: 'Google įvertinimas' },
+    { value: '100%', label: 'Švara' },
   ],
-  partnerLogos: ['BONA', 'OSMO', 'LAGLER'],
 }
 
 export const aboutIntro = {
@@ -52,7 +52,7 @@ export const aboutIntro = {
   text2: 'Mūsų specializacija – senų medinių grindų renovacija, tačiau profesionaliai atliekame ir visus kitus grindų įrengimo bei atnaujinimo darbus.',
   featuresTitle: 'Naudojame aukštos kokybės šlifavimo įrangą, kuri užtikrina:',
   features: [
-    'Išraiškingą ir lygų paviršių be dulkių.',
+    'Išraiškingą, lygų ir švarų paviršių.',
     'Greitą ir efektyvų darbą.',
     'Ilgaamžį rezultatą, kuris išryškina medienos tekstūrą.',
   ],
@@ -203,8 +203,8 @@ export const faq = {
   headline: 'Dažniausiai užduodami klausimai',
   items: [
     {
-      q: 'Ar šlifuojant būna daug dulkių?',
-      a: 'Dulkių kiekis yra labai mažas. Naudojame modernią įrangą su integruotais siurbliais ir ciklonais, kuri surenka didžiąją dalį dulkių. Sistema dirba kaip pramoninis dulkių siurblys.',
+      q: 'Ar procesas bus švarus?',
+      a: 'Taip. Nors šlifavimas yra techninis procesas, naudojame modernią įrangą su integruotais siurbliais ir ciklonais, kuri užtikrina maksimalią švarą ir tvarką.',
     },
     {
       q: 'Nuo ko priklauso šlifavimo kaina?',
@@ -220,7 +220,7 @@ export const faq = {
     },
     {
       q: 'Ar galima gyventi namuose šlifavimo metu?',
-      a: 'Rekomenduojame laikinai išsikraustyti iš šlifuojamo kambario. Dėl HEPA technologijos dulkių sklaida į kitus kambarius yra minimali.',
+      a: 'Rekomenduojame laikinai išsikraustyti iš šlifuojamo kambario. Dėl mūsų naudojamos technologijos namai išlieka tvarkingi, o dulkių sklaida yra minimali.',
     },
     {
       q: 'Kokia garantija suteikiama darbams?',
@@ -289,7 +289,6 @@ export const footer = {
     title: 'Paslaugos',
     links: [
       { label: 'Parketo šlifavimas', href: '/parketo-slifavimas/' },
-      { label: 'Be dulkių šlifavimas', href: '/be-dulkiu-slifavimas/' },
       { label: 'Lakavimas', href: '/grindu-alyvavimas/' },
       { label: 'Alyvavimas', href: '/grindu-alyvavimas/' },
       { label: 'Terasų atnaujinimas', href: '/terasu-atnaujinimas/' },

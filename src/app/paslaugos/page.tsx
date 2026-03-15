@@ -5,7 +5,6 @@
  *
  * Also create these sub-pages by copying the template at the bottom:
  *   src/app/parketo-slifavimas/page.tsx
- *   src/app/be-dulkiu-slifavimas/page.tsx
  *   src/app/grindu-alyvavimas/page.tsx
  *   src/app/terasu-atnaujinimas/page.tsx
  *   src/app/komercines-grindys/page.tsx
@@ -19,7 +18,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Grindų Šlifavimo Paslaugos Vilniuje | UAB Mistras nuo 1994',
   description:
-    'Viso spektro grindų priežiūros paslaugos Vilniuje: parketo šlifavimas, lakavimas, alyvavimas, terasų atnaujinimas, komercinės grindys. Be dulkių technologija.',
+    'Viso spektro grindų priežiūros paslaugos Vilniuje: parketo šlifavimas, lakavimas, alyvavimas, terasų atnaujinimas, komercinės grindys. Greitas ir tvarkingas procesas.',
   alternates: { canonical: 'https://mistras.lt/paslaugos/' },
   openGraph: {
     title: 'Paslaugos | UAB Mistras – Grindų Šlifavimas Vilniuje',
@@ -54,30 +53,6 @@ const services = [
     minOrder: 'Min. užsakymas 490€',
     duration: '1–2 dienos (50 m²)',
     cta: 'Sužinoti daugiau',
-  },
-  {
-    id: 'be-dulkiu-slifavimas',
-    href: '/be-dulkiu-slifavimas/',
-    icon: '🫁',
-    color: 'from-sky-900/20 to-sky-700/10',
-    borderHover: 'hover:border-sky-700/40',
-    tag: 'Mūsų USP',
-    tagColor: 'bg-sky-100 text-sky-700',
-    title: 'Šlifavimas be dulkių',
-    subtitle: 'HEPA technologija',
-    description:
-      'Mūsų įrangoje integruota HEPA filtravimo sistema surenka iki 99.9% šlifavimo metu susidarančių dulkių. Idealiai tinka šeimoms su vaikais, alergikais ir gyvūnų savininkais.',
-    features: [
-      'HEPA H13 klasės filtracija',
-      'Dulkių surinkimas tiesiogiai nuo šlifuoklio',
-      'Minimalus kvapas ir triukšmas',
-      'Galima gyventi namuose šlifavimo metu',
-      'Nereikia dengti baldų ir daiktų',
-    ],
-    price: 'įskaičiuota į kainą',
-    minOrder: 'Nemokamai kiekvienam',
-    duration: 'Standartinis laikas',
-    cta: 'Apie technologiją',
   },
   {
     id: 'grindu-alyvavimas',
@@ -180,7 +155,7 @@ const services = [
 const processSteps = [
   { num: '01', title: 'Apžiūra ir sąmata', desc: 'Atvykstame, įvertiname grindų būklę, pateikiame detalią ir nemokamą sąmatą.' },
   { num: '02', title: 'Darbų planavimas', desc: 'Suderinami terminai, medžiagų pasirinkimas, pateikiamas tikslus darbų grafikas.' },
-  { num: '03', title: 'Šlifavimas', desc: 'Profesionali Lagler įranga su HEPA sistema – be dulkių, triukšmo ir streso.' },
+  { num: '03', title: 'Šlifavimas', desc: 'Profesionali Lagler įranga ir tvarkingas procesas – be triukšmo ir streso.' },
   { num: '04', title: 'Apdaila', desc: 'Lakavimas arba alyvavimas pasirinktomis medžiagomis (Bona, Osmo, Opal).' },
   { num: '05', title: 'Rezultatas', desc: 'Grindys kaip naujos. Pateikiame priežiūros instrukciją ir kokybės garantiją.' },
 ]
@@ -204,7 +179,7 @@ export default function PaslaugosPage() {
           </h1>
           <p className="text-white/70 text-lg leading-relaxed max-w-2xl mx-auto mb-10">
             Nuo parketo šlifavimo iki komercinių patalpų atnaujinimo – visas grindų priežiūros
-            paslaugų spektras Vilniuje. <span className="text-orange-400 font-semibold">Be dulkių. Be streso.</span>
+            paslaugų spektras Vilniuje. <span className="text-orange-400 font-semibold">Greitai ir tvarkingai. Be streso.</span>
           </p>
           {/* Quick nav pills */}
           <div className="flex flex-wrap gap-2 justify-center">

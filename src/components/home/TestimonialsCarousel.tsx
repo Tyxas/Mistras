@@ -14,7 +14,7 @@ const placeholderReviews = [
   {
     id: 1,
     stars: 5,
-    text: 'Tikrai profesionalai. Be dulkių – net nesupratome, kad vyko šlifavimas. Grindys atrodo kaip naujos, nors jiems buvo 20 metų.',
+    text: 'Tikrai profesionalai. Labai tvarkingai – net nesupratome, kad vyko šlifavimas. Grindys atrodo kaip naujos, nors jiems buvo 20 metų.',
     name: 'Lina K.',
     city: 'Žvėrynas, Vilnius',
     initial: 'L',

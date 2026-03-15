@@ -117,18 +117,25 @@ export default function HeroSection({ data }: { data?: HeroData }) {
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.15 }}
           className="hidden lg:flex flex-col gap-4"
         >
-          {/* Before/After slider */}
-          <BeforeAfterSlider
-            beforeSrc="placeholder-before"
-            afterSrc="placeholder-after"
-            beforeAlt="Senos parketo grindys prieš šlifavimą"
-            afterAlt="Atnaujintos parketo grindys po šlifavimo"
-            location="Žvėrynas"
-            projectType="Ąžuolo parketas"
-          />
+          {/* Sanding Video */}
+          <div className="relative aspect-video rounded-brand-lg overflow-hidden shadow-brand-lg border-4 border-white/5">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-full object-cover"
+            >
+              <source src="/videos/sanding.mp4" type="video/mp4" />
+              {/* Fallback image if video fails or is missing */}
+              <img src="/images/portfolio/portfolio-zverynas.png" alt="Grindų šlifavimas" className="w-full h-full object-cover" />
+            </video>
+            {/* Play overlay for aesthetic */}
+            <div className="absolute inset-0 bg-gradient-to-t from-walnut-dark/40 to-transparent pointer-events-none" />
+          </div>
 
           {/* Stat cards */}
-          <div className="grid grid-cols-3 gap-3">
+          <div className="grid grid-cols-2 gap-3">
             <div className="bg-white/[0.08] border border-white/10 rounded-brand p-5 text-center backdrop-blur-sm">
               <span className="font-heading text-3xl font-black text-orange block">30+</span>
               <div className="text-xs text-white/60 mt-1">Metų patirties</div>
@@ -136,10 +143,6 @@ export default function HeroSection({ data }: { data?: HeroData }) {
             <div className="bg-white/[0.08] border border-white/10 rounded-brand p-5 text-center backdrop-blur-sm">
               <span className="font-heading text-3xl font-black text-orange block">500+</span>
               <div className="text-xs text-white/60 mt-1">Projektų</div>
-            </div>
-            <div className="bg-white/[0.08] border border-white/10 rounded-brand p-5 text-center backdrop-blur-sm">
-              <span className="font-heading text-3xl font-black text-orange block">100%</span>
-              <div className="text-xs text-white/60 mt-1">Švara</div>
             </div>
           </div>
         </motion.div>
