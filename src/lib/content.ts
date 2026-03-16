@@ -88,6 +88,37 @@ export const aboutPage = {
     p2: 'Pirmuosius darbus atlikome dviese su žmona – klojome parketą, o vėliau, atsiradus poreikiui, įsigijome ir pirmąją šlifavimo mašiną. Užsakymų daugėjo, todėl pradėjome plėsti komandą ir samdyti darbuotojus.',
     p3: 'Per daugelį metų įmonė patyrė visko – augo, traukėsi, išgyveno pakilimus ir nuosmukius, tačiau visada sugrįždavo stipresnė. Šiandien „Mistras“ yra brandi, patirties užgrūdinta įmonė, išlaikiusi pagrindines savo vertybes – kokybišką ir tvarkingą darbą bei pagarbą klientui.',
   },
+  timeline: {
+    sectionTag: 'Meistrystės istorija',
+    headline: 'Mūsų kelio gairės',
+    milestones: [
+      {
+        year: '1986',
+        title: 'Kelio pradžia',
+        text: 'Jonas baigia staliaus mokyklą ir pradeda pirmąsias pažintis su medžiu. Tai buvo laikas, kai formavosi meistrystės pamatai.',
+        image: '/images/about/timeline-1986.jpg', // Placeholder path
+      },
+      {
+        year: '1994',
+        title: 'UAB Mistras gimimas',
+        text: 'Įkuriama šeimos įmonė. Pirmieji parketo klojimo darbai dviese su žmona. Pradėtas kurti prekės ženklas, kuris šiandien asocijuojasi su kokybe.',
+        image: '/images/about/timeline-1994.jpg', // Placeholder path
+        highlight: true,
+      },
+      {
+        year: '2005',
+        title: 'Technologinis šuolis',
+        text: 'Įsigyjama pirmoji profesionali šlifavimo įranga (Lägler), pradedama komandos plėtra ir modernių standartų diegimas.',
+        image: '/images/about/timeline-2005.jpg', // Placeholder path
+      },
+      {
+        year: 'Šiandien',
+        title: 'Brandus profesionalumas',
+        text: '30+ metų patirtis, šimtai atnaujintų objektų ir neblėstanti aistra medžiui. Esame pasirengę bet kokiems iššūkiams.',
+        image: '/images/about/timeline-today.jpg', // Placeholder path
+      },
+    ],
+  },
   works: {
     sectionTag: 'Mūsų darbai',
     headline: 'Patirtis įvairiuose projektuose',
@@ -315,39 +346,41 @@ export const ctaBanner = {
 }
 
 export const contactForm = {
-  sectionTag: 'Kontaktai',
-  headline: 'Susisiekite su mumis',
-  step1Title: '1 žingsnis: Jūsų kontaktai',
-  step2Title: '2 žingsnis: Grindų detalės',
-  successTitle: 'Ačiū! Gavome jūsų užklausą.',
-  successText: 'Susisieksime per 24 val. ir sutarsime dėl nemokamos apžiūros.',
+  sectionTag: 'Gauti sąmatą',
+  headline: 'Pradėkite grindų atnaujinimą',
+  steps: {
+    1: '1. Medienos tipas',
+    2: '2. Plotas',
+    3: '3. Apdaila',
+    4: '4. Kontaktai',
+    5: '5. Nuotraukos (neprivaloma)',
+    6: 'Pabaiga',
+  },
+  successTitle: 'Ačiū!',
+  successText: 'Meistras Jonas peržiūrės nuotraukas ir susisieks per 24 valandas.',
   fields: {
-    name: 'Vardas ir pavardė *',
-    phone: 'Telefono numeris *',
-    email: 'El. paštas',
-    city: 'Miestas / Rajonas',
+    woodType: 'Kokios jūsų grindys? *',
+    woodOptions: ['Uosis', 'Ąžuolas', 'Pušis / Eglė', 'Egzotinė mediena', 'Nežinau'],
     area: 'Grindų plotas (m²) *',
-    condition: 'Grindų būklė *',
-    conditionOptions: ['Gera (maži įbrėžimai)', 'Vidutinė (matomi pažeidimai)', 'Bloga (didelis atnaujinimas)'],
-    service: 'Pageidaujama paslauga',
-    serviceOptions: [
-      'Šlifavimas + Lakavimas',
-      'Šlifavimas + Alyvavimas',
+    finish: 'Pasirinkite apdailą *',
+    finishOptions: [
+      'Lakavimas (ilgaamžiškumas)',
+      'Alyvavimas (natūralumas)',
       'Premium (Bona Traffic HD)',
       'Tik šlifavimas',
-      'Terasų atnaujinimas',
-      'Palangių šlifavimas',
-      'Komercinės grindys',
-      'Grindjuosčių tvirtinimas',
     ],
-    photo: 'Nuotrauka (nebūtina)',
+    name: 'Vardas *',
+    phone: 'Telefono numeris *',
+    photo: 'Norite tikslesnės sąmatos? Įkelkite savo grindų nuotrauką.',
+    photoSub: 'Iki 3 nuotraukų, maks. 5MB viso.',
   },
-  nextButton: 'Toliau: grindų detalės →',
-  submitButton: 'Siųsti užklausą',
+  nextButton: 'Toliau',
+  submitButton: 'Pateikti užklausą',
   errors: {
     required: 'Šis laukas privalomas',
     phone: 'Įveskite teisingą telefono numerį',
-    email: 'Įveskite teisingą el. paštą',
+    fileLimit: 'Daugiausiai 3 nuotraukos',
+    fileSize: 'Maksimalus bendras dydis 5MB',
   },
 }
 

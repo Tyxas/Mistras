@@ -38,6 +38,11 @@ export default async function ApieMusPage() {
       p2: wpData?.aboutHistoryP2 || aboutPage.history.p2,
       p3: wpData?.aboutHistoryP3 || aboutPage.history.p3,
     },
+    timeline: {
+      sectionTag: wpData?.aboutTimelineTag || aboutPage.timeline.sectionTag,
+      headline: wpData?.aboutTimelineHeadline || aboutPage.timeline.headline,
+      milestones: aboutPage.timeline.milestones, // Milestones are static for now as requested
+    },
     works: {
       sectionTag: wpData?.aboutWorksTag || aboutPage.works.sectionTag,
       headline: wpData?.aboutWorksHeadline || aboutPage.works.headline,

@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import CtaBanner from '@/components/shared/CtaBanner'
+import Timeline from '@/components/about/Timeline'
 
 interface AboutData {
   hero: {
@@ -33,6 +34,17 @@ interface AboutData {
     headline: string
     text: string
     closing: string
+  }
+  timeline: {
+    sectionTag: string
+    headline: string
+    milestones: {
+      year: string
+      title: string
+      text: string
+      image: string
+      highlight?: boolean
+    }[]
   }
 }
 
@@ -186,6 +198,13 @@ export default function AboutClient({ data }: { data: AboutData }) {
           </div>
         </div>
       </section>
+
+      {/* Legacy Timeline Section */}
+      <Timeline 
+        sectionTag={data.timeline.sectionTag}
+        headline={data.timeline.headline}
+        milestones={data.timeline.milestones}
+      />
 
       {/* Works Section */}
       <section className="py-24 px-[5%] bg-white overflow-hidden">
