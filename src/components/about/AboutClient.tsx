@@ -40,31 +40,50 @@ export default function AboutClient({ data }: { data: AboutData }) {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-walnut-dark via-blue-brand to-green-brand pt-32 pb-24 px-[5%] overflow-hidden">
-        <div 
-          className="absolute inset-0 opacity-10 pointer-events-none"
+      <section className="relative min-h-[60vh] flex items-center overflow-hidden bg-gradient-to-br from-walnut-dark via-[#2C1810] to-slate-brand pt-24 pb-20 px-[5%]">
+        {/* Grain texture overlay */}
+        <div
+          className="absolute inset-0 opacity-[0.04] pointer-events-none"
           style={{
             backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E")`,
           }}
         />
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-green-accent/20 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2" />
-        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-blue-accent/20 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/2" />
 
-        <div className="relative z-[2] max-w-[1200px] mx-auto text-center lg:text-left">
+        {/* Herringbone pattern overlay */}
+        <div
+          className="absolute inset-0 opacity-[0.05] pointer-events-none"
+          style={{
+            background: 'repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,.3) 10px, rgba(255,255,255,.3) 11px)',
+          }}
+        />
+
+        {/* Brand Glows */}
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-green-accent/10 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2" />
+        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-blue-accent/10 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/2" />
+
+        {/* '55' Branding Watermark */}
+        <div className="absolute right-[5%] bottom-[10%] select-none pointer-events-none z-[1]">
+          <span className="font-heading font-black text-[15rem] leading-none text-white/[0.03] tracking-tighter">
+            55
+          </span>
+        </div>
+
+        <div className="relative z-[2] max-w-[1200px] mx-auto w-full">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            initial={{ opacity: 0, x: -30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7, ease: 'easeOut' }}
+            className="max-w-[800px]"
           >
-            <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-white/90 text-xs font-semibold uppercase tracking-[0.2em] px-4 py-2 rounded-full mb-8">
-              <span className="w-2 h-2 bg-green-accent rounded-full animate-pulse" />
+            <div className="inline-flex items-center gap-2 bg-white/10 border border-white/15 text-white/80 text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full mb-8">
+              <span className="text-orange text-[0.5rem]">●</span>
               {data.hero.eyebrow}
             </div>
-            <h1 className="font-heading font-black text-display-xl text-white mb-6 leading-[1.1]">
+            <h1 className="font-heading font-black text-display-lg lg:text-display-xl text-white mb-6 leading-[1.1]">
               {data.hero.headline}{' '}
-              <span className="text-green-accent">{data.hero.headlineAccent}</span>
+              <span className="text-orange">{data.hero.headlineAccent}</span>
             </h1>
-            <p className="text-xl leading-relaxed text-white/80 max-w-[700px] mx-auto lg:mx-0">
+            <p className="text-lg leading-relaxed text-white/70 max-w-[600px]">
               {data.hero.subheadline}
             </p>
           </motion.div>

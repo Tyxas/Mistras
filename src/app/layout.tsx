@@ -9,6 +9,7 @@ import { Inter_Tight, Open_Sans } from 'next/font/google'
 import NavBar from '@/components/layout/NavBar'
 import Footer from '@/components/layout/Footer'
 import MobileStickyBar from '@/components/layout/MobileStickyBar'
+import CookieConsent from '@/components/common/CookieConsent'
 import './globals.css'
 
 // Heading font — used via font-heading Tailwind class
@@ -54,6 +55,7 @@ export default function RootLayout({
         <main>{children}</main>
         <Footer />
         <MobileStickyBar />
+        <CookieConsent />
       </body>
     </html>
   )

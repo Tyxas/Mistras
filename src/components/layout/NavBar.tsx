@@ -31,10 +31,10 @@ export default function NavBar() {
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 right-0 z-[100] flex items-center justify-between h-[72px] px-[5%] transition-all duration-300 ${
+        className={`fixed top-0 left-0 right-0 z-[100] flex items-center justify-between h-[72px] px-[5%] transition-all duration-300 bg-walnut-dark ${
           scrolled
-            ? 'bg-walnut-dark shadow-[0_2px_20px_rgba(0,0,0,.3)]'
-            : 'bg-transparent'
+            ? 'shadow-[0_2px_20px_rgba(0,0,0,.3)]'
+            : 'bg-opacity-95 backdrop-blur-md'
         }`}
       >
         {/* Logo */}

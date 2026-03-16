@@ -12,6 +12,7 @@ export const nav = {
     { label: 'Atlikti darbai', href: '/atlikti-darbai/' },
     { label: 'Kainos', href: '/kainos/' },
     { label: 'Apie mus', href: '/apie-mus/' },
+    { label: 'DUK', href: '/duk/' },
     { label: 'Kontaktai', href: '/kontaktai/' },
   ],
   ctaLabel: 'Gauti sąmatą',
@@ -328,4 +329,159 @@ export const footer = {
       { label: 'Slapukai', href: '/slapukai/' },
     ],
   },
+}
+
+export const cookieConsent = {
+  message: 'Mes naudojame slapukus, kad užtikrintume geriausią patirtį mūsų svetainėje.',
+  accept: 'Sutinku',
+  decline: 'Nesutinku',
+  moreInfo: 'Daugiau informacijos',
+}
+
+export const notFound = {
+  headline: 'Pasiklydote labirinte?',
+  subheadline: 'Puslapis, kurio ieškote, neegzistuoja arba buvo perkeltas. Leiskite mums padėti jums sugrįžti į kelią.',
+  ctaLabel: 'Grįžti į pradžią',
+}
+
+export const privacyPolicy = {
+  title: 'Privatumo politika',
+  lastUpdated: 'Atnaujinta: 2024 m. kovo 16 d.',
+  sections: [
+    {
+      title: '1. Bendrosios nuostatos',
+      content: 'UAB „Mistras“ (toliau – Duomenų valdytojas) gerbia savo lankytojų ir klientų privatumą. Ši privatumo politika nustato, kaip mes renkame, naudojame ir saugome jūsų asmens duomenis, naudojantis mūsų svetaine mistras.lt.'
+    },
+    {
+      title: '2. Renkami duomenys',
+      content: 'Mes renkame duomenis, kuriuos pateikiate užpildydami kontaktinę formą: vardą, pavardę, telefono numerį, el. pašto adresą bei informaciją apie jūsų grindų būklę.'
+    },
+    {
+      title: '3. Duomenų naudojimo tikslas',
+      content: 'Jūsų duomenis naudojame tik tam, kad galėtume su jumis susisiekti, pateikti sąmatą arba suteikti informaciją apie mūsų paslaugas.'
+    },
+    {
+      title: '4. Duomenų saugojimas',
+      content: 'Mes nerenkame ir nesaugome jūsų duomenų ilgiau nei tai būtina tikslams, kuriems jie buvo surinkti, pasiekti. Mes neperduodame jūsų duomenų trečiosioms šalims be jūsų sutikimo, išskyrus įstatymų nustatytus atvejus.'
+    }
+  ]
+}
+
+export const cookiePolicy = {
+  title: 'Slapukų politika',
+  lastUpdated: 'Atnaujinta: 2024 m. kovo 16 d.',
+  intro: 'Slapukai (angl. cookies) – tai maži tekstiniai failai, kurie įrašomi į jūsų įrenginį, kai lankotės mūsų svetainėje.',
+  sections: [
+    {
+      title: 'Kam naudojame slapukus?',
+      content: 'Slapukus naudojame svetainės lankomumo analizei (Google Analytics) ir tam, kad užtikrintume sklandų svetainės veikimą bei jūsų patogumą.'
+    },
+    {
+      title: 'Kaip valdyti slapukus?',
+      content: 'Jūs galite bet kada ištrinti visus savo naršyklėje esančius slapukus arba nustatyti naršyklę taip, kad jie nebūtų įrašomi. Tačiau tokiu atveju kai kurios svetainės funkcijos gali neveikti.'
+    }
+  ]
+}
+
+export const dukPage = {
+  hero: {
+    eyebrow: 'DUK',
+    headline: 'Dažniausiai užduodami ',
+    headlineAccent: 'klausimai.',
+    subheadline: 'Atsakome į svarbiausius jūsų klausimus apie grindų šlifavimą, atnaujinimą ir priežiūrą.',
+  },
+  categories: [
+    {
+      id: 'general',
+      title: 'Bendri klausimai',
+      items: [
+        {
+          q: 'Ar galima gyventi namuose šlifavimo metu?',
+          a: 'Taip. Nors šlifavimas yra techninis procesas, naudojame modernią įrangą su integruotais siurbliais (Lagler), kuri užtikrina maksimalią švarą. Trumpalaikis buvimas namuose yra įmanomas, tačiau rekomenduojame išsikraustyti iš šlifuojamo kambario.',
+        },
+        {
+          q: 'Nuo ko priklauso šlifavimo kaina?',
+          a: 'Kaina priklauso nuo grindų būklės (seni dažai, gilūs įbrėžimai), medienos tipo, ploto dydžio ir pasirinktos apdailos (lakas, alyva, spalva). Tikslią sąmatą pateikiame po nemokamos apžiūros.',
+        },
+        {
+          q: 'Ar dirbate savaitgaliais?',
+          a: 'Taip, dirbame ir savaitgaliais. Komerciniam sektoriui galime dirbti ir naktimis, kad nekliudytume jūsų veiklai.',
+        },
+        {
+          q: 'Ar suteikiate garantiją?',
+          a: 'Visiems atliktiems darbams suteikiame kokybės garantiją. Naudojame tik sertifikuotas, aukščiausios klasės medžiagas (Bona, Osmo).',
+        },
+      ],
+    },
+    {
+      id: 'sanding',
+      title: 'Šlifavimas ir renovacija',
+      items: [
+        {
+          q: 'Kiek laiko trunka parketo šlifavimas?',
+          a: 'Standartinis butas (50–70 m²) paruošiamas per 1–2 dienas. Lakui išdžiūti reikia 12–24 val., alyvai – 8–12 val. Pateikiame tikslų grafiką prieš pradedant darbus.',
+        },
+        {
+          q: 'Kiek kartų galima šlifuoti medines grindis?',
+          a: 'Tai priklauso nuo medienos sluoksnio storio. Standartinis 22mm parketas gali būti šlifuojamas 5–8 kartus. Prieš pradedant darbus įvertiname, ar šlifavimas nepažeis konstrukcinio vientisumo.',
+        },
+        {
+          q: 'Ar šlifuojate kampus ir sunkiai prieinamas vietas?',
+          a: 'Taip, naudojame specialius kampinio šlifavimo įrankius, kurie užtikrina vienodą rezultatą visoje patalpoje – net prie sienų, spintų ir laiptų.',
+        },
+        {
+          q: 'Ar galima šlifuoti tik dalį kambario?',
+          a: 'Techniškai įmanoma, tačiau nerekomenduojama. Naujai nušlifuota vieta visada bus šviesesnė ir skirsis nuo seniau atnaujintų grindų spalvos. Rekomenduojame atnaujinti visą patalpą.',
+        },
+        {
+          q: 'Ar visas medines grindis galima šlifuoti?',
+          a: 'Daugumą – taip. Tačiau jei pažeistas ne tik paviršius, bet ir grindų konstrukcija, vien šlifavimo gali nepakakti. Apžiūros metu nustatysime, ar jūsų grindis galima saugiai restauruoti.',
+        },
+      ],
+    },
+    {
+      id: 'finish',
+      title: 'Danga ir priežiūra',
+      items: [
+        {
+          q: 'Lakas ar alyva – kas geriau?',
+          a: 'Lakas suteikia stipresnę apsaugą nuo drėgmės ir trinčių (geriau virtuvėms, koridoriams). Alyva pabrėžia natūralų medienos grožį ir ją lengviau atnaujinti vietiškai (geriau miegamiesiems). Patarsime įvertinę jūsų poreikius.',
+        },
+        {
+          q: 'Kiek sluoksnių lako rekomenduojate?',
+          a: 'Standartiniam naudojimui rekomenduojame 3 sluoksnius: vienas grunto ir du apdailos lako. Komercinėms patalpoms rekomenduojame iki 4 sluoksnių „Bona Traffic HD“.',
+        },
+        {
+          q: 'Ar galima pakeisti grindų spalvą?',
+          a: 'Taip. Po šlifavimo galime tonuoti grindis norima spalva (beicavimas) prieš dengiant laką ar alyvą. Siūlome plačią spalvų paletę.',
+        },
+        {
+          q: 'Kaip prižiūrėti atnaujintas grindis?',
+          a: 'Rekomenduojame valyti drėgna, bet ne šlapia šluoste. Per didelė drėgmė gali išbrinkinti medį. Naudokite pH neutralus valiklius arba specialius skysčius su alyva/vašku.',
+        },
+        {
+          q: 'Ar galima naudoti grindis tą pačią dieną?',
+          a: 'Rekomenduojame palaukti bent 12–24 valandas po paskutinio sluoksnio. Pilnas lako ar alyvos sukietėjimas vyksta 7–10 dienų, tuo metu venkite sunkių baldų stumdymų.',
+        },
+      ],
+    },
+    {
+      id: 'terraces',
+      title: 'Terasų atnaujinimas',
+      items: [
+        {
+          q: 'Kada geriausias metas atnaujinti terasą?',
+          a: 'Idealus laikas – pavasaris (balandis–gegužė) arba ruduo, kai temperatūra viršija +10°C ir neprognozuojamas lietus artimiausią parą.',
+        },
+        {
+          q: 'Ar reikia šlifuoti, ar pakanka tik peralyvuoti?',
+          a: 'Jei mediena stipriai papilkėjusi ar sena alyva lupasi, šlifavimas būtinas. Jei mediena geros būklės, gali pakakti giluminio plovimo ir naujo alyvos sluoksnio.',
+        },
+        {
+          q: 'Kaip dažnai reikia alyvuoti terasą?',
+          a: 'Priklausomai nuo saulės ir drėgmės poveikio, rekomenduojame atnaujinti kas 1–2 sezonus, kad mediena nepradėtų skilinėti ir pilkėti.',
+        },
+      ],
+    },
+  ],
 }
