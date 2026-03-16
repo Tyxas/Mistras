@@ -213,6 +213,70 @@ export const testimonials = {
   sectionTag: 'Atsiliepimai',
   headline: 'Ką sako mūsų klientai',
   source: 'Google Reviews',
+  realReviews: [
+    {
+      name: 'Audra',
+      text: 'Dėkoju Jonui už išsipildžiusią svajonę, atnaujintą seną parketą, kuris niekada neprilygs naujam. Buvo vietų kur reikėjo įdėti keletą ir naujų lentelių, tai kaip diena ir naktis. Ir dėkui būtent Jonui, kuris patikėjo šiuo projektu ir jo ėmėsi, kai tuo tarpu kiti kolegos jau buvo jį nurašę kaip neatgaivinamą.',
+      date: '2025 11 18',
+      rating: 5,
+      images: [
+        'https://paslaugos-img.dgn.lt/review_2_19728179/img.jpg',
+        'https://paslaugos-img.dgn.lt/review_2_19728185/img.jpg',
+        'https://paslaugos-img.dgn.lt/review_2_19728193/img.jpg'
+      ]
+    },
+    {
+      name: 'Rūta Pociūtė',
+      text: 'Labai patiko visa komunikacija su Jonu, jis greit apskaičiavo ir atsiuntė sąmatą ir suderino tinkamą laiką. Darbai irgi atlikti per sutartą laiką. Buvo viskas padaryta kaip sutarta, grindys stipriai pagražėjo. Apskritai kokybė puiki, bet labiausiai patiko bendravimas - šiltas, jaukus ir pagalbus.',
+      date: '2024 12 11',
+      rating: 5,
+      images: [
+        'https://paslaugos-img.dgn.lt/review_2_17488597/img.jpg',
+        'https://paslaugos-img.dgn.lt/review_2_17488599/img.jpg'
+      ]
+    },
+    {
+      name: 'Bernardas',
+      text: 'Sklandžiai sutarta, prieš darbus paskaičiuota apytikslė kaina. 20 kv. m. šlifavimas užtruko pusantros dienos, nes buvo vietų reikalavusių daugiau pastangų. Patarė kokią alyvą pirkti ir kaip alyvuoti. Rezultatas puikus.',
+      date: '2024 04',
+      rating: 5,
+      images: [
+        'https://paslaugos-img.dgn.lt/review_2_19857343/img.jpg',
+        'https://paslaugos-img.dgn.lt/review_2_19857345/img.jpg',
+        'https://paslaugos-img.dgn.lt/review_2_19857347/img.jpg'
+      ]
+    },
+    {
+      name: 'Daumantė Strelčiūnienė',
+      text: 'Kultūringi, malonūs, punktualūs meistrai. Rekomenduojame visiems, kam reikia kokybiškas grindų atnaujinimo.',
+      date: '2025 08 29',
+      rating: 5,
+      images: [
+        'https://paslaugos-img.dgn.lt/review_2_19302525/img.jpg',
+        'https://paslaugos-img.dgn.lt/review_2_19302527/img.jpg',
+        'https://paslaugos-img.dgn.lt/review_2_19302529/img.jpg'
+      ]
+    },
+    {
+      name: 'Dmitry Yezepchik',
+      text: 'Visi darbai buvo atlikti efektyviai ir laiku. Puikūs specialistai. Dėmesys detalėms, švari darbo kultūra.',
+      date: '2026 01 27',
+      rating: 5,
+      images: [
+        'https://paslaugos-img.dgn.lt/review_2_20009152/img.jpg'
+      ]
+    },
+    {
+      name: 'Rūta Šaltenienė',
+      text: 'Darbai atlikti kokybiškai. Viskas vyko sklandžiai, taip kaip buvo suderinta ir paaiškinta prieš darbų pradžią. Puiki darbo kultūra ir kokybė.',
+      date: '2025 09 08',
+      rating: 5,
+      images: [
+        'https://paslaugos-img.dgn.lt/review_2_19348977/img.jpg',
+        'https://paslaugos-img.dgn.lt/review_2_19348979/img.jpg'
+      ]
+    }
+  ]
 }
 
 export const faq = {
