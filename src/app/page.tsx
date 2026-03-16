@@ -4,7 +4,10 @@
  * Includes generateMetadata() and LocalBusiness JSON-LD.
  */
 import type { Metadata } from 'next'
-import { getHomepageData, getPortfolioItems } from '@/lib/wp-graphql'
+import { getPortfolioItems } from '@/lib/wp-graphql'
+
+export const revalidate = 60 // Caches data for 60 seconds
+
 import HeroSection from '@/components/home/HeroSection'
 import TrustBar from '@/components/home/TrustBar'
 import AboutIntro from '@/components/home/AboutIntro'
@@ -36,17 +39,13 @@ export const metadata: Metadata = {
 }
 
 export default async function HomePage() {
-  const wpData = await getHomepageData().catch((e) => {
-    console.error("WP Fetch Failed:", e);
-    return null;
-  });
 
   const portfolioData = await getPortfolioItems().catch(() => []);
 
   return (
     <>
       <LocalBusinessSchema />
-      <HeroSection data={wpData} />
+      <HeroSection />
       <TrustBar />
       <AboutIntro />
       <Calculator />

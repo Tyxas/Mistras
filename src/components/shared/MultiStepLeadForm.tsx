@@ -38,7 +38,7 @@ export default function MultiStepLeadForm() {
   const [errors, setErrors] = useState<Record<string, string>>({})
   const fileInputRef = useRef<HTMLInputElement>(null)
 
-  const update = (field: keyof FormData, value: any) => {
+  const update = (field: keyof FormData, value: string | File[]) => {
     setFormData((prev) => ({ ...prev, [field]: value }))
     if (errors[field]) {
       setErrors((prev) => {
@@ -51,7 +51,7 @@ export default function MultiStepLeadForm() {
 
   // Phone Normalization: 86... -> +3706..., 06... -> +3706...
   const normalizePhone = (phone: string) => {
-    let cleaned = phone.replace(/\s+/g, '').replace(/[\(\)-]/g, '')
+    const cleaned = phone.replace(/\s+/g, '').replace(/[\(\)-]/g, '')
     if (cleaned.startsWith('86')) return '+3706' + cleaned.substring(2)
     if (cleaned.startsWith('06')) return '+3706' + cleaned.substring(2)
     if (/^6\d{7}$/.test(cleaned)) return '+3706' + cleaned.substring(1)

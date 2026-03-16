@@ -20,11 +20,7 @@ export interface HeroData {
   heroCtaSecondary?: string;
 }
 
-export default function HeroSection({ data }: { data?: HeroData }) {
-  // Use WP data or fallback to offline content
-  // Check if WP data contains "dust-free" (be dulkių) - if it does, it's stale and we use local fallback
-  const isStale = (text?: string) => text?.toLowerCase().includes('dulkių') || false;
-
+export default function HeroSection() {
   // Prioritize local content.ts for branding text as requested by the user
   const eyebrow = hero.eyebrow;
   const headline = hero.headline;

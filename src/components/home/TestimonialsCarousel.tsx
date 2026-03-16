@@ -3,7 +3,6 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import Image from 'next/image'
 import { testimonials } from '@/lib/content'
 
 export default function TestimonialsCarousel() {

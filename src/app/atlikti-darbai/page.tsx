@@ -8,6 +8,8 @@ import PortfolioGrid from '@/components/portfolio/PortfolioGrid'
 import CtaBanner from '@/components/shared/CtaBanner'
 import { getPortfolioItems } from '@/lib/wp-graphql'
 
+export const revalidate = 60 // Caches data for 60 seconds
+
 export const metadata: Metadata = {
   title: 'Atlikti Darbai — Grindų Šlifavimo Portfolio | UAB Mistras',
   description:
