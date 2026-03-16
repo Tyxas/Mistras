@@ -25,15 +25,14 @@ export default function HeroSection({ data }: { data?: HeroData }) {
   // Check if WP data contains "dust-free" (be dulkių) - if it does, it's stale and we use local fallback
   const isStale = (text?: string) => text?.toLowerCase().includes('dulkių') || false;
 
-  const eyebrow = data?.heroEyebrow || hero.eyebrow;
+  // Prioritize local content.ts for branding text as requested by the user
+  const eyebrow = hero.eyebrow;
+  const headline = hero.headline;
+  const headlineAccent = hero.headlineAccent;
+  const subheadline = hero.subheadline;
   
-  // Force local values if WP data is stale (contains "dust-free" claims)
-  const headline = isStale(data?.heroHeadline) ? hero.headline : (data?.heroHeadline || hero.headline);
-  const headlineAccent = isStale(data?.heroHeadlineAccent) ? hero.headlineAccent : (data?.heroHeadlineAccent || hero.headlineAccent);
-  const subheadline = isStale(data?.heroSubheadline) ? hero.subheadline : (data?.heroSubheadline || hero.subheadline);
-  
-  const ctaPrimary = data?.heroCtaPrimary || hero.ctaPrimary;
-  const ctaSecondary = data?.heroCtaSecondary || hero.ctaSecondary;
+  const ctaPrimary = hero.ctaPrimary;
+  const ctaSecondary = hero.ctaSecondary;
 
   return (
     <section id="hero" className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-walnut-dark via-[#2C1810] to-slate-brand">

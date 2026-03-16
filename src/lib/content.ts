@@ -22,9 +22,9 @@ export const nav = {
 
 export const hero = {
   eyebrow: 'Šeimos verslas · Vilnius · Nuo 1994',
-  headline: 'Grindų šlifavimas su 30 metų',
-  headlineAccent: 'meistrystės garantija',
-  subheadline: '30 metų meistrystė, premium medžiagos (Bona, Osmo) ir švarus bei tvarkingas procesas – jūsų namai bus kaip nauji.',
+  headline: 'Meistrystė nuo 1994 metų:',
+  headlineAccent: 'Atkuriame grindis, kuriomis didžiuositės.',
+  subheadline: '30 metų patirtis, premium medžiagos ir garantuota švara po kiekvieno objekto. Jokių paslėptų mokesčių, tik tikras ir kokybiškas rezultatas.',
   ctaPrimary: 'Gauti nemokamą sąmatą',
   ctaSecondary: 'Peržiūrėti darbus',
   badges: [
