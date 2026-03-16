@@ -25,8 +25,8 @@ export default function DukPage() {
       <section className="relative min-h-[45vh] flex items-center overflow-hidden bg-walnut-dark pt-32 pb-24 px-[5%]">
         {/* Animated Background Elements */}
         <div className="absolute inset-0 z-0">
-          <div className="absolute top-[-10%] right-[-10%] w-[600px] h-[600px] bg-blue-accent/20 rounded-full blur-[120px] animate-pulse" />
-          <div className="absolute bottom-[-10%] left-[-10%] w-[500px] h-[500px] bg-green-accent/15 rounded-full blur-[100px]" />
+          <div className="absolute top-[-10%] right-[-10%] w-[600px] h-[600px] bg-orange/10 rounded-full blur-[120px] animate-pulse" />
+          <div className="absolute bottom-[-10%] left-[-10%] w-[500px] h-[500px] bg-walnut/20 rounded-full blur-[100px]" />
           <div 
             className="absolute inset-0 opacity-[0.03]"
             style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")` }}
@@ -39,8 +39,8 @@ export default function DukPage() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
           >
-            <div className="inline-flex items-center gap-3 bg-white/5 backdrop-blur-md border border-white/10 text-blue-accent text-[0.7rem] font-bold uppercase tracking-[0.2em] px-5 py-2 rounded-full mb-8 shadow-2xl">
-              <span className="w-2 h-2 bg-green-accent rounded-full animate-ping" />
+            <div className="inline-flex items-center gap-3 bg-white/5 backdrop-blur-md border border-white/10 text-white/90 text-[0.7rem] font-bold uppercase tracking-[0.2em] px-5 py-2 rounded-full mb-8 shadow-2xl">
+              <span className="w-2 h-2 bg-orange rounded-full animate-ping" />
               {dukPage.hero.eyebrow}
             </div>
             <h1 className="font-heading font-black text-display-lg lg:text-7xl text-white mb-8 leading-[1.05] tracking-tight">
@@ -84,7 +84,7 @@ export default function DukPage() {
                       {isActive && (
                         <motion.div 
                           layoutId="activeGlow"
-                          className="absolute inset-0 bg-gradient-to-r from-blue-accent/10 to-transparent pointer-events-none" 
+                          className="absolute inset-0 bg-gradient-to-r from-orange/10 to-transparent pointer-events-none" 
                         />
                       )}
                       <div className={`absolute right-4 top-1/2 -translate-y-1/2 transition-all duration-300 ${isActive ? 'opacity-100' : 'opacity-0 translate-x-2'}`}>
@@ -99,7 +99,7 @@ export default function DukPage() {
 
               {/* Decorative Card */}
               <div className="hidden lg:block bg-walnut-dark p-8 rounded-3xl text-white shadow-2xl mt-12 overflow-hidden relative group border border-white/10">
-                <div className="absolute -right-8 -bottom-8 w-32 h-32 bg-blue-accent/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700" />
+                <div className="absolute -right-8 -bottom-8 w-32 h-32 bg-orange/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700" />
                 <h4 className="font-heading font-black text-2xl mb-2 text-white">Nerandi atsakymo?</h4>
                 <p className="text-white/80 text-sm mb-8 font-medium leading-relaxed">Susisiekite tiesiogiai ir mes padėsime atsakyti į visus jums rūpimus klausimus.</p>
                 <Link 
@@ -128,7 +128,7 @@ export default function DukPage() {
                 <h2 className="font-heading font-black text-4xl lg:text-5xl text-walnut-dark tracking-tight mb-4">
                   {currentCategory?.title}
                 </h2>
-                <div className="h-1.5 w-full max-w-[400px] bg-gradient-to-r from-orange via-blue-accent to-transparent rounded-full opacity-80" />
+                <div className="h-1.5 w-full max-w-[400px] bg-gradient-to-r from-orange via-orange/40 to-transparent rounded-full opacity-80" />
               </div>
 
               {currentCategory?.items.map((item, index) => {
@@ -140,7 +140,7 @@ export default function DukPage() {
                     key={itemId}
                     className={`group rounded-3xl transition-all duration-500 border-2 overflow-hidden bg-white ${
                       isOpen 
-                        ? 'border-blue-accent/20 shadow-2xl shadow-blue-accent/5' 
+                        ? 'border-orange/20 shadow-2xl shadow-orange/5' 
                         : 'border-white hover:border-slate-200 shadow-sm'
                     }`}
                   >
@@ -172,7 +172,7 @@ export default function DukPage() {
                         >
                           <div className="px-8 pb-10 pt-2 text-walnut-dark/70 text-lg lg:text-xl leading-relaxed font-medium">
                             <div className="p-8 bg-slate-50 rounded-2xl border border-slate-100 relative overflow-hidden">
-                              <div className="absolute top-0 left-0 w-1 h-full bg-blue-accent/30" />
+                              <div className="absolute top-0 left-0 w-1 h-full bg-orange/30" />
                               {item.a}
                             </div>
                           </div>
