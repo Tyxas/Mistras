@@ -1,8 +1,8 @@
 # Mistras.lt — Next.js + Headless WordPress rebuild
 
-Production rebuild of [mistras.lt](https://mistras.lt) — a Lithuanian floor-services company (parquet sanding, floor oiling, commercial floors, terrace renewal, baseboard installation). I designed and built the front-end as a Next.js 14 App Router site backed by headless WordPress + WPGraphQL.
+A Next.js 14 + headless WordPress reference implementation for [mistras.lt](https://mistras.lt) — a Lithuanian floor-services company (parquet sanding, floor oiling, commercial floors, terrace renewal, baseboard installation). I designed and built the full front-end as an alternative architecture path; the client ultimately chose to stay on their WordPress + Astra setup, so this rebuild stands as a complete reference implementation rather than a live deployment.
 
-**Status:** In production. The site is live at mistras.lt.
+**Status:** Complete reference implementation. The live site at mistras.lt currently runs the original WordPress + Astra theme. This repo is the parallel Next.js rebuild.
 
 ---
 
@@ -66,7 +66,7 @@ npm run type-check            # TS verification
 
 ## Why publish it
 
-This is the most representative piece of my client work — a full Next.js + TypeScript + headless WordPress rebuild, deployed and in production for a real Lithuanian SMB. The repo shows the front-end + integration plumbing I ship for clients. Published with the client's permission for portfolio purposes; the live deployment, content, and credentials live separately.
+This is the most representative piece of my client work — a full Next.js + TypeScript + headless WordPress rebuild for a real Lithuanian SMB. The repo shows the front-end + integration plumbing I ship for clients. Built end-to-end as a migration path; the client elected to stay on WordPress + Astra for their live deployment, so the implementation stands as a reference / portfolio piece. Published with the client's permission for portfolio purposes.
 
 ## License
 
